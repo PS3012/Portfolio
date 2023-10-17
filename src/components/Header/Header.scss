@@ -1,0 +1,29 @@
+@import "../../assets/Default";
+@import "../../assets/Mixins";
+@import "../../assets/Global";
+
+//! ==============================================================
+//! HEADER SCSS
+//! ==============================================================
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    .inner-grid {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        @include logo();
+        .link-block {
+            display: flex;
+            gap: 20px;
+            a {
+                font-size: 1.2rem;
+            }
+        }
+    }
+}

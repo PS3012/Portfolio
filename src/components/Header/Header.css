@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Arsenal&family=Caveat&family=Mate+SC&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Arsenal&family=Caveat&family=Mate+SC&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Arsenal", sans-serif;
+  color: #101010; }
+  body #root {
+    background-blend-mode: color-dodge;
+    background-size: cover; }
+
+a, a:hover {
+  text-decoration: none;
+  color: white;
+  transition: all 0.3s linear; }
+  a:hover {
+    color: red; }
+
+button {
+  border: 0;
+  outline: 0;
+  background: transparent; }
+
+::selection {
+  background: red;
+  color: #ffffff; }
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%; }
+  header .inner-grid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px; }
+    header .inner-grid .logo .head {
+      color: black;
+      font-weight: bold;
+      font-size: 2rem;
+      text-transform: uppercase;
+      text-align: center;
+      gap: 10px;
+      font-family: "Mate SC", serif;
+      color: white; }
+    header .inner-grid .logo .slogan {
+      font-size: 0.9rem;
+      color: red;
+      text-transform: uppercase;
+      text-align: center;
+      letter-spacing: 2px;
+      font-family: "Caveat", cursive; }
+    header .inner-grid .link-block {
+      display: flex;
+      gap: 20px; }
+      header .inner-grid .link-block a {
+        font-size: 1.2rem; }
+
+/*# sourceMappingURL=Header.css.map */

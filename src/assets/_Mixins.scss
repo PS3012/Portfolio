@@ -1,0 +1,29 @@
+@mixin logo() {
+    .logo {
+        .head {
+            color: black;
+            font-weight: bold;
+            font-size: 2rem;
+            text-transform: uppercase;
+            text-align: center;
+            gap: 10px;
+            font-family: $themeFont3;
+            color: white;
+        }
+        .slogan {
+            font-size: 0.9rem;
+            color: $themeColor;
+            text-transform: uppercase;
+            text-align: center;
+            letter-spacing: 2px;
+            font-family: $themeFont2;
+        }
+    }
+}
+
+@mixin wordHighlight($tag, $color) {
+    #{$tag} {
+        color: $color;
+        font-weight: initial;
+    }
+}

@@ -1,0 +1,36 @@
+@import "./Global";
+
+//! ==============================================================
+//! DEFAULT SCSS
+//! ==============================================================
+body {
+  margin: 0;
+  padding: 0;
+  font-family: $themeFont;
+  color: $backgroundBg;
+  #root {
+    background-blend-mode: color-dodge;
+    background-size: cover;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  transition: all 0.3s linear;
+  &:hover {
+    @extend a;
+    color: $themeColor;
+  }
+}
+
+button {
+  border: 0;
+  outline: 0;
+  background: transparent;
+}
+
+::selection {
+  background: $themeColor;
+  color: $white;
+}

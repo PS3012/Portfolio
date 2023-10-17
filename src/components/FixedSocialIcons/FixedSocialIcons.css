@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Arsenal&family=Caveat&family=Mate+SC&display=swap");
+#fixed-social {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 10;
+  display: grid;
+  gap: 10px;
+  justify-items: center; }
+  #fixed-social .text {
+    color: white;
+    font-weight: bold;
+    font-size: 0.85rem;
+    font-family: "Mate SC", serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    writing-mode: vertical-lr; }
+  #fixed-social .line {
+    background: white;
+    width: 2px;
+    height: 70px; }
+
+/*# sourceMappingURL=FixedSocialIcons.css.map */
