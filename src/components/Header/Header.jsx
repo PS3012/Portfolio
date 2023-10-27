@@ -1,9 +1,10 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Header.css'
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 
 function Header() {
+    const location = useLocation();
     const [headerBg, setHeaderBg] = useState(false);
 
     useEffect(() => {
@@ -40,11 +41,21 @@ function Header() {
 
                             {/* LINKS */}
                             <div className="link-block">
-                                <Link to="/explore">Explore</Link>
-                                <Link to="/about">About</Link>
-                                <Link to="/expertise">Expertise</Link>
-                                <Link to="/projects">Projects</Link>
-                                <Link to="/contact">Contact</Link>
+                                <Link to="/explore" className={location.pathname === "/explore" ? "active" : ""}>
+                                    Explore
+                                </Link>
+                                <Link to="/about" className={location.pathname === "/about" ? "active" : ""}>
+                                    About
+                                </Link>
+                                <Link to="/expertise" className={location.pathname === "/expertise" ? "active" : ""}>
+                                    Expertise
+                                </Link>
+                                <Link to="/projects" className={location.pathname === "/projects" ? "active" : ""}>
+                                    Projects
+                                </Link>
+                                <Link to="/contact" className={location.pathname === "/contact" ? "active" : ""}>
+                                    Contact
+                                </Link>
                             </div>
                         </div>
                     </div>

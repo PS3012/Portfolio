@@ -21,9 +21,10 @@ function Footer() {
                             <div className="section-content">
                                 <div className="links">
                                     <Link to="">About</Link>
-                                    <Link to="">Projects</Link>
+                                    <Link to="/projects">Projects</Link>
                                     <Link to="">Expertise</Link>
                                     <Link to="">Contact</Link>
+                                    <Link to="">Resume</Link>
                                 </div>
                                 <div className="copyright">
                                     Copyright <FontAwesomeIcon icon={faCopyright} /> {date.getFullYear()}. All Rights Reserved.

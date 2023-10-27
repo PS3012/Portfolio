@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Arsenal&family=Caveat&family=Mate+SC&family=Metal+Mania&family=Nosifer&display=swap");
+#projects-page {
+  background: #101010;
+  padding-top: 120px; }
+  #projects-page #projects-area {
+    border-bottom: 1px solid #ffffff45; }
+    #projects-page #projects-area .inner-container {
+      border-center: 0px solid #ffffff45;
+      padding: 50px 0; }
+      #projects-page #projects-area .inner-container .section-head {
+        margin-bottom: 50px; }
+        #projects-page #projects-area .inner-container .section-head .main-head {
+          font-size: 3rem;
+          color: #ffffff;
+          text-align: center;
+          font-family: "Nosifer", sans-serif;
+          letter-spacing: 2px; }
+          #projects-page #projects-area .inner-container .section-head .main-head span {
+            color: #ff0000; }
+    #projects-page #projects-area .project-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px; }
+
+/*# sourceMappingURL=Projects.css.map */

@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Arsenal&family=Caveat&family=Mate+SC&family=Metal+Mania&family=Nosifer&display=swap");
+#custom-bread .section-content {
+  position: relative; }
+  #custom-bread .section-content .bg-text {
+    font-size: 20rem;
+    color: #ffffff20;
+    text-align: center;
+    font-family: "Merriweather Sans", sans-serif; }
+  #custom-bread .section-content .overlay-text {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    left: 0;
+    right: 0;
+    width: 100%; }
+    #custom-bread .section-content .overlay-text .top, #custom-bread .section-content .overlay-text .bottom {
+      color: #ff0000;
+      font-family: "Caveat", cursive;
+      font-size: 1.4rem;
+      line-height: 1;
+      letter-spacing: 1px; }
+    #custom-bread .section-content .overlay-text .middle {
+      text-transform: uppercase;
+      text-shadow: 10px 18px 35px #ffffff40;
+      text-align: center;
+      color: #ffffff;
+      font-size: 14rem;
+      font-family: "Merriweather Sans", sans-serif;
+      font-weight: bold;
+      line-height: 1; }
+    #custom-bread .section-content .overlay-text .bottom {
+      text-align: right;
+      font-family: "Mate SC", serif; }
+
+/*# sourceMappingURL=BreadCrumb.css.map */

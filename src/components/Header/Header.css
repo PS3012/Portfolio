@@ -124,6 +124,19 @@ header {
       display: flex;
       gap: 20px; }
       header .inner-grid .link-block a {
-        font-size: 1.2rem; }
+        font-size: 1.2rem;
+        position: relative; }
+        header .inner-grid .link-block a::after {
+          content: "";
+          position: absolute;
+          top: 100%;
+          left: 50%;
+          transform: translate(-50%, 5px);
+          background: #ffffff;
+          height: 3px;
+          border-radius: 5px;
+          width: 0%; }
+        header .inner-grid .link-block a.active::after {
+          width: 50%; }
 
 /*# sourceMappingURL=Header.css.map */

@@ -1,0 +1,17 @@
+@import "../../assets/Global";
+@import "../../assets/Mixins";
+
+//! ==============================================================
+//! PROJECTS SCSS
+//! ==============================================================
+#projects-page {
+  @include pageInitials();
+  #projects-area {
+    @include sectionInitials(center, 0);
+    .project-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+  }
+}

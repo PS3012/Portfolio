@@ -5,19 +5,24 @@ import FixedSocialIcons from "./components/FixedSocialIcons/FixedSocialIcons"
 import CustomLoader from "./components/CustomLoader/CustomLoader"
 import Explore from "./pages/Explore/Explore"
 import Footer from "./components/Footer/Footer"
+import Projects from "./pages/Projects/Projects"
+import SmoothScroll from "./components/SmoothScroll"
 
 function App() {
   return (
     <>
       <BrowserRouter>
-        <CustomLoader />
-        <Header />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/explore" element={<Explore />} />
-        </Routes>
-        <FixedSocialIcons />
-        <Footer />
+        <SmoothScroll>
+          <CustomLoader />
+          <Header />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/explore" element={<Explore />} />
+            <Route path="/projects" element={<Projects />} />
+          </Routes>
+          <FixedSocialIcons />
+          <Footer />
+        </SmoothScroll>
       </BrowserRouter>
     </>
   )
