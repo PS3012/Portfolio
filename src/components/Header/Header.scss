@@ -12,6 +12,11 @@ header {
     left: 0;
     right: 0;
     width: 100%;
+    z-index: 10;
+    &.bgHeader {
+        border-bottom: 1px solid $grey;
+        background: $backgroundBg;
+    }
     .inner-grid {
         display: flex;
         justify-content: space-between;

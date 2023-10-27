@@ -8,10 +8,7 @@ body {
   padding: 0;
   font-family: $themeFont;
   color: $backgroundBg;
-  #root {
-    background-blend-mode: color-dodge;
-    background-size: cover;
-  }
+  scroll-behavior: smooth;
 }
 
 a {
@@ -24,6 +21,22 @@ a {
   }
 }
 
+input,
+textarea {
+  border: 0;
+  outline: 0;
+  color: white;
+  font-family: $themeFont3;
+}
+
+input:focus,
+input:focus-visible,
+textarea:focus,
+textarea:focus-visible {
+  @extend input;
+  box-shadow: none;
+}
+
 button {
   border: 0;
   outline: 0;
@@ -33,4 +46,60 @@ button {
 ::selection {
   background: $themeColor;
   color: $white;
+}
+
+//! ==============================================================
+//! BOX BUTTON SCSS
+//! ==============================================================
+.box-button {
+  position: relative;
+  height: 50px;
+  padding: 0 30px;
+  border: 2px solid $white;
+  background: $backgroundBg;
+  user-select: none;
+  white-space: nowrap;
+  transition: all 0.05s linear;
+  font-family: $themeFont3;
+  display: grid;
+  place-items: center;
+  &:before {
+    content: "";
+    position: absolute;
+    background: $backgroundBg;
+    transition: all 0.2s linear;
+    width: calc(100% + 6px);
+    height: calc(100% - 16px);
+    top: 8px;
+    left: -3px;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    background: $backgroundBg;
+    transition: all 0.2s linear;
+    width: calc(100% - 16px);
+    height: calc(100% + 6px);
+    top: -3px;
+    left: 8px;
+  }
+  &:hover {
+    cursor: crosshair;
+    &::before {
+      height: calc(100% - 32px);
+      top: 16px;
+    }
+    &::after {
+      width: calc(100% - 32px);
+      left: 16px;
+    }
+  }
+  span {
+    font-size: 1.2rem;
+    z-index: 2;
+    position: relative;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: $white;
+  }
 }

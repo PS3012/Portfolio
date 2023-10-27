@@ -7,6 +7,8 @@
 #head-container {
   width: 100%;
   height: 100vh;
+  background-blend-mode: color-dodge;
+  background-size: cover;
   .section-content {
     display: flex;
     flex-direction: column;

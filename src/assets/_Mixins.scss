@@ -1,29 +1,62 @@
 @mixin logo() {
-    .logo {
-        .head {
-            color: black;
-            font-weight: bold;
-            font-size: 2rem;
-            text-transform: uppercase;
-            text-align: center;
-            gap: 10px;
-            font-family: $themeFont3;
-            color: white;
-        }
-        .slogan {
-            font-size: 0.9rem;
-            color: $themeColor;
-            text-transform: uppercase;
-            text-align: center;
-            letter-spacing: 2px;
-            font-family: $themeFont2;
-        }
+  .logo {
+    display: block;
+    .head {
+      color: black;
+      font-weight: bold;
+      font-size: 2rem;
+      text-transform: uppercase;
+      text-align: center;
+      gap: 10px;
+      font-family: $themeFont3;
+      color: white;
     }
+    .slogan {
+      font-size: 0.9rem;
+      color: $themeColor;
+      text-transform: uppercase;
+      text-align: center;
+      letter-spacing: 2px;
+      font-family: $themeFont2;
+    }
+  }
 }
 
 @mixin wordHighlight($tag, $color) {
-    #{$tag} {
-        color: $color;
-        font-weight: initial;
+  #{$tag} {
+    color: $color;
+    font-weight: initial;
+  }
+}
+
+@mixin pageInitials() {
+  background: $backgroundBg;
+  padding-top: 120px;
+}
+
+@mixin sectionInitials($direction, $width) {
+  border-bottom: 1px solid $grey;
+  .inner-container {
+    border-#{$direction}: $width + px solid $grey;
+    @if ($width>0 and $direction==left) {
+      padding: 50px 0 50px 30px;
+    } @else if($width>0 and $direction==right) {
+      padding: 50px 30px 50px 0;
+    } @else {
+      padding: 50px 0;
     }
+    .section-head {
+      margin-bottom: 50px;
+      .main-head {
+        font-size: 3rem;
+        color: $white;
+        text-align: $direction;
+        font-family: $themeFont4;
+        letter-spacing: 2px;
+        span {
+          color: $themeColor;
+        }
+      }
+    }
+  }
 }

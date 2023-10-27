@@ -1,20 +1,36 @@
-@import url("https://fonts.googleapis.com/css2?family=Arsenal&family=Caveat&family=Mate+SC&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Arsenal&family=Caveat&family=Mate+SC&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Arsenal&family=Caveat&family=Mate+SC&family=Metal+Mania&family=Nosifer&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Arsenal&family=Caveat&family=Mate+SC&family=Metal+Mania&family=Nosifer&display=swap");
 body {
   margin: 0;
   padding: 0;
   font-family: "Arsenal", sans-serif;
-  color: #101010; }
-  body #root {
-    background-blend-mode: color-dodge;
-    background-size: cover; }
+  color: #101010;
+  scroll-behavior: smooth; }
 
 a, a:hover {
   text-decoration: none;
   color: white;
   transition: all 0.3s linear; }
   a:hover {
-    color: red; }
+    color: #ff0000; }
+
+input, input:focus,
+input:focus-visible,
+textarea:focus,
+textarea:focus-visible,
+textarea {
+  border: 0;
+  outline: 0;
+  color: white;
+  font-family: "Mate SC", serif; }
+
+input:focus,
+textarea:focus,
+input:focus-visible,
+textarea:focus-visible,
+textarea:focus,
+textarea:focus-visible {
+  box-shadow: none; }
 
 button {
   border: 0;
@@ -22,36 +38,88 @@ button {
   background: transparent; }
 
 ::selection {
-  background: red;
+  background: #ff0000;
   color: #ffffff; }
+
+.box-button {
+  position: relative;
+  height: 50px;
+  padding: 0 30px;
+  border: 2px solid #ffffff;
+  background: #101010;
+  user-select: none;
+  white-space: nowrap;
+  transition: all 0.05s linear;
+  font-family: "Mate SC", serif;
+  display: grid;
+  place-items: center; }
+  .box-button:before {
+    content: "";
+    position: absolute;
+    background: #101010;
+    transition: all 0.2s linear;
+    width: calc(100% + 6px);
+    height: calc(100% - 16px);
+    top: 8px;
+    left: -3px; }
+  .box-button::after {
+    content: "";
+    position: absolute;
+    background: #101010;
+    transition: all 0.2s linear;
+    width: calc(100% - 16px);
+    height: calc(100% + 6px);
+    top: -3px;
+    left: 8px; }
+  .box-button:hover {
+    cursor: crosshair; }
+    .box-button:hover::before {
+      height: calc(100% - 32px);
+      top: 16px; }
+    .box-button:hover::after {
+      width: calc(100% - 32px);
+      left: 16px; }
+  .box-button span {
+    font-size: 1.2rem;
+    z-index: 2;
+    position: relative;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #ffffff; }
 
 header {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  width: 100%; }
+  width: 100%;
+  z-index: 10; }
+  header.bgHeader {
+    border-bottom: 1px solid #ffffff45;
+    background: #101010; }
   header .inner-grid {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px; }
-    header .inner-grid .logo .head {
-      color: black;
-      font-weight: bold;
-      font-size: 2rem;
-      text-transform: uppercase;
-      text-align: center;
-      gap: 10px;
-      font-family: "Mate SC", serif;
-      color: white; }
-    header .inner-grid .logo .slogan {
-      font-size: 0.9rem;
-      color: red;
-      text-transform: uppercase;
-      text-align: center;
-      letter-spacing: 2px;
-      font-family: "Caveat", cursive; }
+    header .inner-grid .logo {
+      display: block; }
+      header .inner-grid .logo .head {
+        color: black;
+        font-weight: bold;
+        font-size: 2rem;
+        text-transform: uppercase;
+        text-align: center;
+        gap: 10px;
+        font-family: "Mate SC", serif;
+        color: white; }
+      header .inner-grid .logo .slogan {
+        font-size: 0.9rem;
+        color: #ff0000;
+        text-transform: uppercase;
+        text-align: center;
+        letter-spacing: 2px;
+        font-family: "Caveat", cursive; }
     header .inner-grid .link-block {
       display: flex;
       gap: 20px; }

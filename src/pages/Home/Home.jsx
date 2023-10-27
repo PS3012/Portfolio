@@ -3,7 +3,6 @@ import './Home.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faDownload } from '@fortawesome/free-solid-svg-icons';
 import { faWpexplorer } from '@fortawesome/free-brands-svg-icons';
-import TextWritingEffect from '../../components/TextWritingEffect';
 import { Link } from 'react-router-dom';
 
 function Home() {
@@ -13,7 +12,7 @@ function Home() {
             {/* ========================================================== */}
             {/* HOME CONTAINER */}
             {/* ========================================================== */}
-            <section id="head-container">
+            <section id="head-container" style={{ backgroundImage: "url(" + "/body-bg.jpg" + ")" }}>
                 <div className="section-content">
                     <div className="top-container">
                         <div className="container">
@@ -21,7 +20,7 @@ function Home() {
                                 <div className="text">Lorem ipsum <span>dolor sit</span> amet consectetur adipisicing elit <span>adipisicing</span> elit consectetur adipisicing.</div>
                                 <div className="btn-bar">
                                     <a href="#" download className="action-btn"><FontAwesomeIcon icon={faDownload} />&nbsp; My Resume</a>
-                                    <Link to="" className="action-btn"><FontAwesomeIcon icon={faWpexplorer} />&nbsp; Explore Projects</Link>
+                                    <Link to="/explore" className="action-btn"><FontAwesomeIcon icon={faWpexplorer} />&nbsp; Explore</Link>
                                 </div>
                             </div>
                         </div>
@@ -40,7 +39,7 @@ function Home() {
                                     </div>
                                 </div>
                                 <div className="about">
-                                    <TextWritingEffect text="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos eius, consequatur quod libero reprehenderit veritatis recusandae cupiditate rerum distinctio facere." />
+                                    Lorem ipsum, dolor sit amet <span>consectetur adipisicing</span> elit. Quos eius, consequatur <span>quod libero reprehenderit</span> veritatis recusandae cupiditate <span>rerum distinctio</span> facere.
                                 </div>
                             </div>
                         </div>

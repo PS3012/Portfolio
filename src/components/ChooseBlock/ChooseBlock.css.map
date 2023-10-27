@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAQ,2IAAmI;ACM3I,aAAc;EACV,OAAO,EAAE,IAAI;EACb,qBAAqB,EAAE,OAAO;EAC9B,WAAW,EAAE,MAAM;EACnB,oBAAO;IACH,YAAY,EAAE,KAAK;IACnB,wBAAI;MACA,UAAU,EAAE,KAAK;EAGzB,sBAAS;IACL,OAAO,EAAE,SAAS;IAClB,KAAK,EAAE,KAAK;IACZ,4BAAM;MACF,SAAS,EAAE,MAAM;MACjB,WAAW,EDfV,yBAAyB;MCgB1B,aAAa,EAAE,IAAI",
+"sources": ["../../assets/_Global.scss","ChooseBlock.scss"],
+"names": [],
+"file": "ChooseBlock.css"
+}

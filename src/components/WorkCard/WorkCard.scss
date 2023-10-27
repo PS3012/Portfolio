@@ -1,0 +1,26 @@
+@import "../../assets/Global";
+@import "../../assets/Mixins";
+
+//! ==============================================================
+//! WORK CARD SCSS
+//! ==============================================================
+.work-card {
+  .image {
+    margin-bottom: 10px;
+    border-radius: 8px;
+    border: 2px solid white;
+    overflow: hidden;
+    aspect-ratio: 1/0.57;
+  }
+  .name {
+    color: white;
+    font-family: $themeFont3;
+    font-size: 1.3rem;
+    letter-spacing: 2px;
+    font-weight: bold;
+    color: $themeColor;
+  }
+  .text {
+    color: white;
+  }
+}

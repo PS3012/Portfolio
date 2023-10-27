@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Arsenal&family=Caveat&family=Mate+SC&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Arsenal&family=Caveat&family=Mate+SC&family=Metal+Mania&family=Nosifer&display=swap");
 #custom-loader {
   width: 100vw;
   height: 100vh;
@@ -21,7 +21,7 @@
   0% {
     width: 100%;
     height: 100vh; }
-  50% {
+  70% {
     width: 1px;
     height: 100vh; }
   100% {

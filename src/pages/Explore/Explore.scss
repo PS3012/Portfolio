@@ -1,0 +1,198 @@
+@import "../../assets/Global";
+@import "../../assets/Mixins";
+
+//! ==============================================================
+//! EXPLORE SCSS
+//! ==============================================================
+#explore-page {
+  @include pageInitials();
+
+  #main-section {
+    padding-bottom: 20px;
+    border-bottom: 1px solid $grey;
+    .section-content {
+      padding: 0 0 30px;
+      overflow-y: hidden;
+    }
+    .top-text {
+      color: $white;
+      font-weight: bold;
+      font-size: 7rem;
+      text-transform: uppercase;
+      display: flex;
+      align-items: flex-end;
+      gap: 20px;
+      margin-bottom: 40px;
+      .image {
+        width: 250px;
+      }
+    }
+    .mid-text {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr 1.5fr;
+      gap: 30px;
+      height: 180px;
+      .title {
+        color: $white;
+        letter-spacing: 10px;
+        font-size: 7rem;
+        text-transform: uppercase;
+      }
+      .content {
+        font-family: $themeFont2;
+        color: $white;
+        font-size: 1.2rem;
+        letter-spacing: 1px;
+      }
+    }
+    .bottom-text {
+      color: $white;
+      font-weight: bold;
+      font-size: 7rem;
+      text-transform: uppercase;
+      text-align: center;
+    }
+  }
+
+  #my-works {
+    @include sectionInitials(left, 1);
+    .work-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+      margin-bottom: 30px;
+    }
+    .btn-area {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  #futuristic {
+    @include sectionInitials(right, 0);
+    position: relative;
+    max-height: $maxDisplayHeight;
+    .video-bg {
+      margin-bottom: -5px;
+    }
+    .content-container {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      display: flex;
+      align-items: center;
+      .content-box {
+        max-width: 800px;
+        margin: 0 auto;
+        .head {
+          font-size: 3rem;
+          color: $white;
+          font-family: $themeFont5;
+          text-transform: uppercase;
+          letter-spacing: 2px;
+          margin-bottom: 10px;
+          span {
+            color: $themeColor;
+          }
+        }
+        .details {
+          color: white;
+          font-family: $themeFont2;
+          letter-spacing: 2px;
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+
+  #technologies {
+    @include sectionInitials(center, 0);
+    .tech-grid {
+      display: grid;
+      grid-template-columns: repeat(9, 1fr);
+      gap: 20px;
+      .technology-card {
+        color: $white;
+        .icon {
+          font-size: 3rem;
+          display: grid;
+          place-items: center;
+          margin-bottom: 5px;
+        }
+        .name {
+          font-size: 1rem;
+          letter-spacing: 1px;
+          font-family: $themeFont3;
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  #why-choose {
+    @include sectionInitials(center, 0);
+  }
+
+  #contact-me {
+    @include sectionInitials(left, 1);
+    .inner-grid {
+      display: grid;
+      grid-template-columns: 3fr 1fr;
+      align-items: center;
+      gap: 30px;
+      .form-block {
+        .group-input {
+          margin-bottom: 20px;
+          display: grid;
+          grid-template-columns: 150px 1fr;
+          border: 1px solid $grey;
+          border-radius: 5px;
+          label {
+            color: $white;
+            font-family: $themeFont2;
+            display: grid;
+            place-items: center;
+            border-right: 1px solid $grey;
+          }
+          input,
+          textarea {
+            width: 100%;
+            display: block;
+            padding: 5px 15px;
+            background: unquote($white + "3d");
+          }
+        }
+      }
+      .detail-block {
+        .icon {
+          background: #ff0000;
+          color: $white;
+          border-radius: 50%;
+          aspect-ratio: 1/1;
+          width: 80px;
+          display: grid;
+          place-items: center;
+          font-size: 2.5rem;
+          transform: rotate(45deg);
+          margin-bottom: 20px;
+        }
+        .block {
+          margin-bottom: 10px;
+          &:nth-last-child(1) {
+            margin-bottom: 0;
+          }
+          div {
+            color: $white;
+            font-family: $themeFont3;
+            font-size: 1.2rem;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,217 @@
+@import url("https://fonts.googleapis.com/css2?family=Arsenal&family=Caveat&family=Mate+SC&family=Metal+Mania&family=Nosifer&display=swap");
+#explore-page {
+  background: #101010;
+  padding-top: 120px; }
+  #explore-page #main-section {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ffffff45; }
+    #explore-page #main-section .section-content {
+      padding: 0 0 30px;
+      overflow-y: hidden; }
+    #explore-page #main-section .top-text {
+      color: #ffffff;
+      font-weight: bold;
+      font-size: 7rem;
+      text-transform: uppercase;
+      display: flex;
+      align-items: flex-end;
+      gap: 20px;
+      margin-bottom: 40px; }
+      #explore-page #main-section .top-text .image {
+        width: 250px; }
+    #explore-page #main-section .mid-text {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr 1.5fr;
+      gap: 30px;
+      height: 180px; }
+      #explore-page #main-section .mid-text .title {
+        color: #ffffff;
+        letter-spacing: 10px;
+        font-size: 7rem;
+        text-transform: uppercase; }
+      #explore-page #main-section .mid-text .content {
+        font-family: "Caveat", cursive;
+        color: #ffffff;
+        font-size: 1.2rem;
+        letter-spacing: 1px; }
+    #explore-page #main-section .bottom-text {
+      color: #ffffff;
+      font-weight: bold;
+      font-size: 7rem;
+      text-transform: uppercase;
+      text-align: center; }
+  #explore-page #my-works {
+    border-bottom: 1px solid #ffffff45; }
+    #explore-page #my-works .inner-container {
+      border-left: 1px solid #ffffff45;
+      padding: 50px 0 50px 30px; }
+      #explore-page #my-works .inner-container .section-head {
+        margin-bottom: 50px; }
+        #explore-page #my-works .inner-container .section-head .main-head {
+          font-size: 3rem;
+          color: #ffffff;
+          text-align: left;
+          font-family: "Nosifer", sans-serif;
+          letter-spacing: 2px; }
+          #explore-page #my-works .inner-container .section-head .main-head span {
+            color: #ff0000; }
+    #explore-page #my-works .work-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+      margin-bottom: 30px; }
+    #explore-page #my-works .btn-area {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+  #explore-page #futuristic {
+    border-bottom: 1px solid #ffffff45;
+    position: relative;
+    max-height: calc(100vh - 110px); }
+    #explore-page #futuristic .inner-container {
+      border-right: 0px solid #ffffff45;
+      padding: 50px 0; }
+      #explore-page #futuristic .inner-container .section-head {
+        margin-bottom: 50px; }
+        #explore-page #futuristic .inner-container .section-head .main-head {
+          font-size: 3rem;
+          color: #ffffff;
+          text-align: right;
+          font-family: "Nosifer", sans-serif;
+          letter-spacing: 2px; }
+          #explore-page #futuristic .inner-container .section-head .main-head span {
+            color: #ff0000; }
+    #explore-page #futuristic .video-bg {
+      margin-bottom: -5px; }
+    #explore-page #futuristic .content-container {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      display: flex;
+      align-items: center; }
+      #explore-page #futuristic .content-container .content-box {
+        max-width: 800px;
+        margin: 0 auto; }
+        #explore-page #futuristic .content-container .content-box .head {
+          font-size: 3rem;
+          color: #ffffff;
+          font-family: "Metal Mania", sans-serif;
+          text-transform: uppercase;
+          letter-spacing: 2px;
+          margin-bottom: 10px; }
+          #explore-page #futuristic .content-container .content-box .head span {
+            color: #ff0000; }
+        #explore-page #futuristic .content-container .content-box .details {
+          color: white;
+          font-family: "Caveat", cursive;
+          letter-spacing: 2px;
+          font-size: 1.2rem; }
+  #explore-page #technologies {
+    border-bottom: 1px solid #ffffff45; }
+    #explore-page #technologies .inner-container {
+      border-center: 0px solid #ffffff45;
+      padding: 50px 0; }
+      #explore-page #technologies .inner-container .section-head {
+        margin-bottom: 50px; }
+        #explore-page #technologies .inner-container .section-head .main-head {
+          font-size: 3rem;
+          color: #ffffff;
+          text-align: center;
+          font-family: "Nosifer", sans-serif;
+          letter-spacing: 2px; }
+          #explore-page #technologies .inner-container .section-head .main-head span {
+            color: #ff0000; }
+    #explore-page #technologies .tech-grid {
+      display: grid;
+      grid-template-columns: repeat(9, 1fr);
+      gap: 20px; }
+      #explore-page #technologies .tech-grid .technology-card {
+        color: #ffffff; }
+        #explore-page #technologies .tech-grid .technology-card .icon {
+          font-size: 3rem;
+          display: grid;
+          place-items: center;
+          margin-bottom: 5px; }
+        #explore-page #technologies .tech-grid .technology-card .name {
+          font-size: 1rem;
+          letter-spacing: 1px;
+          font-family: "Mate SC", serif;
+          text-align: center; }
+  #explore-page #why-choose {
+    border-bottom: 1px solid #ffffff45; }
+    #explore-page #why-choose .inner-container {
+      border-center: 0px solid #ffffff45;
+      padding: 50px 0; }
+      #explore-page #why-choose .inner-container .section-head {
+        margin-bottom: 50px; }
+        #explore-page #why-choose .inner-container .section-head .main-head {
+          font-size: 3rem;
+          color: #ffffff;
+          text-align: center;
+          font-family: "Nosifer", sans-serif;
+          letter-spacing: 2px; }
+          #explore-page #why-choose .inner-container .section-head .main-head span {
+            color: #ff0000; }
+  #explore-page #contact-me {
+    border-bottom: 1px solid #ffffff45; }
+    #explore-page #contact-me .inner-container {
+      border-left: 1px solid #ffffff45;
+      padding: 50px 0 50px 30px; }
+      #explore-page #contact-me .inner-container .section-head {
+        margin-bottom: 50px; }
+        #explore-page #contact-me .inner-container .section-head .main-head {
+          font-size: 3rem;
+          color: #ffffff;
+          text-align: left;
+          font-family: "Nosifer", sans-serif;
+          letter-spacing: 2px; }
+          #explore-page #contact-me .inner-container .section-head .main-head span {
+            color: #ff0000; }
+    #explore-page #contact-me .inner-grid {
+      display: grid;
+      grid-template-columns: 3fr 1fr;
+      align-items: center;
+      gap: 30px; }
+      #explore-page #contact-me .inner-grid .form-block .group-input {
+        margin-bottom: 20px;
+        display: grid;
+        grid-template-columns: 150px 1fr;
+        border: 1px solid #ffffff45;
+        border-radius: 5px; }
+        #explore-page #contact-me .inner-grid .form-block .group-input label {
+          color: #ffffff;
+          font-family: "Caveat", cursive;
+          display: grid;
+          place-items: center;
+          border-right: 1px solid #ffffff45; }
+        #explore-page #contact-me .inner-grid .form-block .group-input input,
+        #explore-page #contact-me .inner-grid .form-block .group-input textarea {
+          width: 100%;
+          display: block;
+          padding: 5px 15px;
+          background: #ffffff3d; }
+      #explore-page #contact-me .inner-grid .detail-block .icon {
+        background: #ff0000;
+        color: #ffffff;
+        border-radius: 50%;
+        aspect-ratio: 1/1;
+        width: 80px;
+        display: grid;
+        place-items: center;
+        font-size: 2.5rem;
+        transform: rotate(45deg);
+        margin-bottom: 20px; }
+      #explore-page #contact-me .inner-grid .detail-block .block {
+        margin-bottom: 10px; }
+        #explore-page #contact-me .inner-grid .detail-block .block:nth-last-child(1) {
+          margin-bottom: 0; }
+        #explore-page #contact-me .inner-grid .detail-block .block div {
+          color: #ffffff;
+          font-family: "Mate SC", serif;
+          font-size: 1.2rem; }
+
+/*# sourceMappingURL=Explore.css.map */

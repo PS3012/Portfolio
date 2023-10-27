@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Arsenal&family=Caveat&family=Mate+SC&family=Metal+Mania&family=Nosifer&display=swap");
+.work-card .image {
+  margin-bottom: 10px;
+  border-radius: 8px;
+  border: 2px solid white;
+  overflow: hidden;
+  aspect-ratio: 1/0.57; }
+.work-card .name {
+  color: white;
+  font-family: "Mate SC", serif;
+  font-size: 1.3rem;
+  letter-spacing: 2px;
+  font-weight: bold;
+  color: #ff0000; }
+.work-card .text {
+  color: white; }
+
+/*# sourceMappingURL=WorkCard.css.map */

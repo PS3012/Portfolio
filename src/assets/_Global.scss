@@ -1,8 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Arsenal&family=Caveat&family=Mate+SC&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Arsenal&family=Caveat&family=Mate+SC&family=Metal+Mania&family=Nosifer&display=swap');
 
 $themeFont: "Arsenal", sans-serif;
 $themeFont2: "Caveat", cursive;
 $themeFont3: "Mate SC", serif;
-$themeColor: red;
+$themeFont4: "Nosifer", sans-serif;
+$themeFont5: "Metal Mania", sans-serif;
+$themeColor: #ff0000;
 $backgroundBg: #101010;
 $white: #ffffff;
+$grey: #ffffff45;
+$maxDisplayHeight: calc(100vh - 110px);
