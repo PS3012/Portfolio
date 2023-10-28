@@ -5,6 +5,7 @@
 //! BREADCRUMB SCSS
 //! ==============================================================
 #custom-bread {
+    border-bottom: 1px solid $grey;
     .section-content {
         position: relative;
         .bg-text {

@@ -1,0 +1,21 @@
+@import "../../assets/Global";
+@import "../../assets/Mixins";
+
+//! ==============================================================
+//! TECHNOLOGY CARD SCSS
+//! ==============================================================
+.technology-card {
+  color: $white;
+  .icon {
+    font-size: 3rem;
+    display: grid;
+    place-items: center;
+    margin-bottom: 5px;
+  }
+  .name {
+    font-size: 1rem;
+    letter-spacing: 1px;
+    font-family: $themeFont3;
+    text-align: center;
+  }
+}

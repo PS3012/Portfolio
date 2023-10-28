@@ -7,6 +7,7 @@ import Explore from "./pages/Explore/Explore"
 import Footer from "./components/Footer/Footer"
 import Projects from "./pages/Projects/Projects"
 import SmoothScroll from "./components/SmoothScroll"
+import About from "./pages/About/About"
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/explore" element={<Explore />} />
+            <Route path="/about" element={<About />} />
             <Route path="/projects" element={<Projects />} />
           </Routes>
           <FixedSocialIcons />

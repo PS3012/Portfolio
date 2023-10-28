@@ -6,6 +6,7 @@ import { faEnvelopeOpenText } from '@fortawesome/free-solid-svg-icons';
 import './Explore.css'
 import ChooseBlock from '../../components/ChooseBlock/ChooseBlock';
 import WorkCard from '../../components/WorkCard/WorkCard';
+import TechnologyCard from '../../components/TechnologyCard/TechnologyCard';
 
 function Explore() {
     return (
@@ -49,7 +50,7 @@ function Explore() {
                             </div>
                             <div className="section-content">
                                 <div className="work-grid">
-                                    {works.map((item, index) => index < 4 && (
+                                    {works.map((item, index) => index < 2 && (
                                         <WorkCard
                                             key={item.id}
                                             image={item.image}
@@ -102,10 +103,11 @@ function Explore() {
                             <div className="section-content">
                                 <div className="tech-grid">
                                     {technologies.map((item) => (
-                                        <div className="technology-card" key={item.id}>
-                                            <div className="icon">{item.icon}</div>
-                                            <div className="name">{item.name}</div>
-                                        </div>
+                                        <TechnologyCard
+                                            key={item.id}
+                                            icon={item.icon}
+                                            name={item.name}
+                                        />
                                     ))}
                                 </div>
                             </div>

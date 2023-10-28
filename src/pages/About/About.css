@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Arsenal&family=Caveat&family=Mate+SC&family=Metal+Mania&family=Nosifer&display=swap");
+#about-page {
+  background: #101010;
+  padding-top: 120px; }
+  #about-page #about-me {
+    border-bottom: 1px solid #ffffff45; }
+    #about-page #about-me .inner-container {
+      border-left: 1px solid #ffffff45;
+      padding: 50px 0 50px 30px; }
+      #about-page #about-me .inner-container .section-head {
+        margin-bottom: 50px; }
+        #about-page #about-me .inner-container .section-head .main-head {
+          font-size: 3rem;
+          color: #ffffff;
+          text-align: left;
+          font-family: "Nosifer", sans-serif;
+          letter-spacing: 2px; }
+          #about-page #about-me .inner-container .section-head .main-head span {
+            color: #ff0000; }
+    #about-page #about-me .inner-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px; }
+      #about-page #about-me .inner-grid .content-block .head {
+        color: #ff0000;
+        font-size: 3rem;
+        font-family: "Mate SC", serif;
+        margin-bottom: 20px;
+        font-weight: bold; }
+        #about-page #about-me .inner-grid .content-block .head span {
+          color: #ffffff; }
+      #about-page #about-me .inner-grid .content-block .content {
+        color: #ffffff;
+        font-family: "Merriweather Sans", sans-serif;
+        margin-bottom: 10px; }
+      #about-page #about-me .inner-grid .content-block .redirect {
+        display: flex;
+        gap: 20px; }
+        #about-page #about-me .inner-grid .content-block .redirect a {
+          cursor: crosshair; }
+      #about-page #about-me .inner-grid .image {
+        box-shadow: #ffffff36 0px 0px 3px; }
+  #about-page #more-about-me {
+    border-bottom: 1px solid #ffffff45; }
+    #about-page #more-about-me .inner-container {
+      border-center: 0px solid #ffffff45;
+      padding: 50px 0; }
+      #about-page #more-about-me .inner-container .section-head {
+        margin-bottom: 50px; }
+        #about-page #more-about-me .inner-container .section-head .main-head {
+          font-size: 3rem;
+          color: #ffffff;
+          text-align: center;
+          font-family: "Nosifer", sans-serif;
+          letter-spacing: 2px; }
+          #about-page #more-about-me .inner-container .section-head .main-head span {
+            color: #ff0000; }
+    #about-page #more-about-me .content {
+      color: #ffffff;
+      text-align: center;
+      font-family: "Mate SC", serif;
+      margin-bottom: 20px; }
+    #about-page #more-about-me .btn-block {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px; }
+  #about-page #my-resume {
+    border-bottom: 1px solid #ffffff45; }
+    #about-page #my-resume .inner-container {
+      border-right: 1px solid #ffffff45;
+      padding: 50px 30px 50px 0; }
+      #about-page #my-resume .inner-container .section-head {
+        margin-bottom: 50px; }
+        #about-page #my-resume .inner-container .section-head .main-head {
+          font-size: 3rem;
+          color: #ffffff;
+          text-align: right;
+          font-family: "Nosifer", sans-serif;
+          letter-spacing: 2px; }
+          #about-page #my-resume .inner-container .section-head .main-head span {
+            color: #ff0000; }
+    #about-page #my-resume .resume-tabs .tab-btn {
+      box-shadow: 10px 10px 19px #1c1e22a8, -10px -10px 19px #262a2e85;
+      background: black;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      padding: 10px;
+      border-radius: 5px;
+      margin-bottom: 30px; }
+      #about-page #my-resume .resume-tabs .tab-btn button {
+        padding: 15px 20px;
+        color: #ffffff;
+        border-radius: 5px;
+        font-family: "Mate SC", serif;
+        font-size: 1.5rem;
+        border: 2px solid transparent; }
+        #about-page #my-resume .resume-tabs .tab-btn button:hover {
+          color: #ff0000; }
+        #about-page #my-resume .resume-tabs .tab-btn button.active {
+          background: #101010;
+          border-color: #ff0000; }
+    #about-page #my-resume .resume-tabs .tab-content .skill-grid {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      gap: 30px; }
+
+/*# sourceMappingURL=About.css.map */

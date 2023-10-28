@@ -129,18 +129,6 @@
       display: grid;
       grid-template-columns: repeat(9, 1fr);
       gap: 20px; }
-      #explore-page #technologies .tech-grid .technology-card {
-        color: #ffffff; }
-        #explore-page #technologies .tech-grid .technology-card .icon {
-          font-size: 3rem;
-          display: grid;
-          place-items: center;
-          margin-bottom: 5px; }
-        #explore-page #technologies .tech-grid .technology-card .name {
-          font-size: 1rem;
-          letter-spacing: 1px;
-          font-family: "Mate SC", serif;
-          text-align: center; }
   #explore-page #why-choose {
     border-bottom: 1px solid #ffffff45; }
     #explore-page #why-choose .inner-container {

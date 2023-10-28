@@ -35,7 +35,8 @@ textarea:focus-visible {
 button {
   border: 0;
   outline: 0;
-  background: transparent; }
+  background: transparent;
+  transition: all 0.3s linear; }
 
 ::selection {
   background: #ff0000;

@@ -116,21 +116,6 @@
       display: grid;
       grid-template-columns: repeat(9, 1fr);
       gap: 20px;
-      .technology-card {
-        color: $white;
-        .icon {
-          font-size: 3rem;
-          display: grid;
-          place-items: center;
-          margin-bottom: 5px;
-        }
-        .name {
-          font-size: 1rem;
-          letter-spacing: 1px;
-          font-family: $themeFont3;
-          text-align: center;
-        }
-      }
     }
   }
 
@@ -170,7 +155,7 @@
       }
       .detail-block {
         .icon {
-          background: #ff0000;
+          background: $themeColor;
           color: $white;
           border-radius: 50%;
           aspect-ratio: 1/1;

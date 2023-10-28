@@ -9,7 +9,7 @@ function Footer() {
     return (
         <>
 
-            {(location.pathname !== "/") ?
+            {location.pathname !== "/" && (
                 <footer>
                     <div className="container">
                         <div className="inner-container">
@@ -20,10 +20,10 @@ function Footer() {
                             </div>
                             <div className="section-content">
                                 <div className="links">
-                                    <Link to="">About</Link>
+                                    <Link to="/about">About</Link>
                                     <Link to="/projects">Projects</Link>
-                                    <Link to="">Expertise</Link>
-                                    <Link to="">Contact</Link>
+                                    <Link to="/expertise">Expertise</Link>
+                                    <Link to="/contact">Contact</Link>
                                     <Link to="">Resume</Link>
                                 </div>
                                 <div className="copyright">
@@ -33,8 +33,7 @@ function Footer() {
                         </div>
                     </div>
                 </footer>
-                : null
-            }
+            )}
 
         </>
     )

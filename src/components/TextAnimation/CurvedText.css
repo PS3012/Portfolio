@@ -1,0 +1,30 @@
+#circle {
+    position: relative;
+    border-radius: 100%;
+    animation: rotate-animation 8s infinite linear;
+}
+
+#circle span {
+    position: absolute;
+    color: white;
+    transform-origin: top left;
+}
+
+#circle .icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 2rem;
+}
+
+@keyframes rotate-animation {
+    from {
+        transform: rotate(0);
+    }
+
+    to {
+        transform: rotate(-360deg);
+    }
+}
