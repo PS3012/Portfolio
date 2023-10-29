@@ -16,7 +16,7 @@ function Projects() {
                         <div className="inner-container">
                             <div className="section-content">
                                 <div className="project-grid">
-                                    {works.map((item, index) => index < 4 && (
+                                    {works.map((item) => (
                                         <WorkCard
                                             key={item.id}
                                             image={item.image}

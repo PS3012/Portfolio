@@ -8,6 +8,8 @@
     position: absolute;
     color: white;
     transform-origin: top left;
+    font-size: 1rem;
+    font-weight: 400;
 }
 
 #circle .icon {

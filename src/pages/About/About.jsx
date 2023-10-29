@@ -9,6 +9,7 @@ import CurvedText from '../../components/TextAnimation/CurvedText';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faNfcDirectional } from '@fortawesome/free-brands-svg-icons';
 import { Link } from 'react-router-dom';
+import ContactForm from '../../components/ContactForm/ContactForm';
 
 function About() {
     const [tab, setTab] = useState('education');
@@ -137,6 +138,8 @@ function About() {
                         </div>
                     </div>
                 </div>
+
+                <ContactForm />
 
             </div>
 

@@ -8,6 +8,8 @@ import Footer from "./components/Footer/Footer"
 import Projects from "./pages/Projects/Projects"
 import SmoothScroll from "./components/SmoothScroll"
 import About from "./pages/About/About"
+import Contact from "./pages/Contact/Contact"
+import Expertise from "./pages/Expertise/Expertise"
 
 function App() {
   return (
@@ -21,6 +23,8 @@ function App() {
             <Route path="/explore" element={<Explore />} />
             <Route path="/about" element={<About />} />
             <Route path="/projects" element={<Projects />} />
+            <Route path="/expertise" element={<Expertise />} />
+            <Route path="/contact" element={<Contact />} />
           </Routes>
           <FixedSocialIcons />
           <Footer />

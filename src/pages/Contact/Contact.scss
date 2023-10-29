@@ -1,0 +1,90 @@
+@import "../../assets/Global";
+@import "../../assets/Mixins";
+
+//! ==============================================================
+//! CONTACT SCSS
+//! ==============================================================
+#contact-page {
+  @include pageInitials();
+  #my-details {
+    @include sectionInitials(center, 0);
+    .inner-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+      .detail-card {
+        box-shadow: 5px 5px 10px #0c0c0c, -5px -5px 10px #141414;
+        padding: 20px;
+        border-radius: 5px;
+        display: grid;
+        gap: 10px;
+        color: $white;
+        justify-content: center;
+        justify-items: center;
+        .icon {
+          width: 70px;
+          height: 70px;
+          border: 2px dotted $white;
+          border-radius: 50%;
+          display: grid;
+          place-items: center;
+          font-size: 2rem;
+        }
+        .text {
+          font-family: $themeFont3;
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+  #form-area {
+    @include sectionInitials(center, 0);
+    .inner-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.5fr;
+      gap: 30px;
+      .form-block {
+        box-shadow: 5px 5px 10px #0c0c0c, -5px -5px 10px #141414;
+        padding: 20px;
+        border-radius: 5px;
+        .head {
+          color: $white;
+          text-align: center;
+          font-family: $themeFont3;
+          font-size: 2rem;
+          margin-bottom: 20px;
+          text-transform: uppercase;
+          font-weight: bold;
+        }
+        .group-input {
+          box-shadow: inset 5px 5px 10px #0c0c0c, inset -5px -5px 10px #141414;
+          border-radius: 5px;
+          display: grid;
+          grid-template-columns: 70px 1fr;
+          gap: 10px;
+          padding: 15px 10px;
+          margin-bottom: 20px;
+          label {
+            color: $white;
+            font-family: $themeFont3;
+          }
+          input {
+            display: block;
+            width: 100%;
+            color: $white;
+            background: transparent;
+          }
+          textarea {
+            @extend input;
+          }
+        }
+        .btn-block {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 30px;
+        }
+      }
+    }
+  }
+}

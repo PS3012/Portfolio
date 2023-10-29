@@ -1,0 +1,30 @@
+@import "../../assets/Global";
+@import "../../assets/Mixins";
+
+//! ==============================================================
+//! EXPERTISE SCSS
+//! ==============================================================
+#expertise-page {
+  @include pageInitials();
+  #expertise-area {
+    @include sectionInitials(center, 0);
+    .top-content {
+      color: $white;
+      display: grid;
+      grid-template-columns: 1.5fr 1.5fr 1fr;
+      gap: 50px;
+      margin-bottom: 40px;
+      .head {
+        font-family: $themeFont3;
+        font-size: 1.5rem;
+      }
+      .text {
+        font-family: $themeFont2;
+        font-size: 1.2rem;
+        margin-top: 60px;
+        border-left: 4px solid $themeColor;
+        padding-left: 20px;
+      }
+    }
+  }
+}

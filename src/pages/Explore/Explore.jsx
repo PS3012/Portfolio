@@ -1,12 +1,14 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { technologies, whyChoose, works } from '../../components/Objects';
 import { Link } from 'react-router-dom';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelopeOpenText } from '@fortawesome/free-solid-svg-icons';
-import './Explore.css'
 import ChooseBlock from '../../components/ChooseBlock/ChooseBlock';
 import WorkCard from '../../components/WorkCard/WorkCard';
 import TechnologyCard from '../../components/TechnologyCard/TechnologyCard';
+import ContactForm from '../../components/ContactForm/ContactForm';
+import CurvedText from '../../components/TextAnimation/CurvedText';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faNfcDirectional } from '@fortawesome/free-brands-svg-icons';
+import './Explore.css'
 
 function Explore() {
     return (
@@ -34,6 +36,12 @@ function Explore() {
                                 </div>
                             </div>
                             <div className="bottom-text">
+                                <Link to="/contact" className="curve-text">
+                                    <CurvedText
+                                        text="HIRE ME * HIRE ME *&nbsp;"
+                                        icon={<FontAwesomeIcon icon={faNfcDirectional} />}
+                                    />
+                                </Link>
                                 <div>UI/UX Designer!</div>
                             </div>
                         </div>
@@ -127,56 +135,7 @@ function Explore() {
                     ))}
                 </div>
 
-                <div id="contact-me">
-                    <div className="container">
-                        <div className="inner-container">
-                            <div className="section-head">
-                                <div className="main-head">
-                                    <div>Let&lsquo;s Build Something</div>
-                                    <div><span>Great Together.</span></div>
-                                </div>
-                            </div>
-                            <div className="section-content">
-                                <div className="inner-grid">
-                                    <div className="form-block">
-                                        <div className="group-input">
-                                            <label htmlFor="name">Name</label>
-                                            <input type="text" name="name" />
-                                        </div>
-                                        <div className="group-input">
-                                            <label htmlFor="number">Contact Number</label>
-                                            <input type="number" name="number" />
-                                        </div>
-                                        <div className="group-input">
-                                            <label htmlFor="email">E-Mail</label>
-                                            <input type="email" name="email" />
-                                        </div>
-                                        <div className="group-input">
-                                            <label htmlFor="message">Message</label>
-                                            <textarea name="message"></textarea>
-                                        </div>
-                                        <div className="d-flex justify-content-center">
-                                            <button className="box-button">
-                                                <span>Send Message</span>
-                                            </button>
-                                        </div>
-                                    </div>
-                                    <div className="detail-block">
-                                        <div className="icon">
-                                            <FontAwesomeIcon icon={faEnvelopeOpenText} />
-                                        </div>
-                                        <div className="block">
-                                            <div>+91 8765057868</div>
-                                        </div>
-                                        <div className="block">
-                                            <div>pyushsahud123@gmail.com</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <ContactForm />
 
             </div>
 

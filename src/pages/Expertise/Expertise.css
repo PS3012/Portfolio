@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Arsenal&family=Caveat&family=Mate+SC&family=Metal+Mania&family=Nosifer&display=swap");
+#expertise-page {
+  background: #101010;
+  padding-top: 120px; }
+  #expertise-page #expertise-area {
+    border-bottom: 1px solid #ffffff45; }
+    #expertise-page #expertise-area .inner-container {
+      border-center: 0px solid #ffffff45;
+      padding: 50px 0; }
+      #expertise-page #expertise-area .inner-container .section-head {
+        margin-bottom: 50px; }
+        #expertise-page #expertise-area .inner-container .section-head .main-head {
+          font-size: 3rem;
+          color: #ffffff;
+          text-align: center;
+          font-family: "Nosifer", sans-serif;
+          letter-spacing: 2px; }
+          #expertise-page #expertise-area .inner-container .section-head .main-head span {
+            color: #ff0000; }
+    #expertise-page #expertise-area .top-content {
+      color: #ffffff;
+      display: grid;
+      grid-template-columns: 1.5fr 1.5fr 1fr;
+      gap: 50px;
+      margin-bottom: 40px; }
+      #expertise-page #expertise-area .top-content .head {
+        font-family: "Mate SC", serif;
+        font-size: 1.5rem; }
+      #expertise-page #expertise-area .top-content .text {
+        font-family: "Caveat", cursive;
+        font-size: 1.2rem;
+        margin-top: 60px;
+        border-left: 4px solid #ff0000;
+        padding-left: 20px; }
+
+/*# sourceMappingURL=Expertise.css.map */

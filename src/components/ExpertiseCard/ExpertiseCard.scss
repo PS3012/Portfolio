@@ -1,0 +1,48 @@
+@import "../../assets/Global";
+@import "../../assets/Mixins";
+
+//! ==============================================================
+//! EXPERTISE CARD SCSS
+//! ==============================================================
+.image-content {
+  position: relative;
+  margin-bottom: 40px;
+  .content {
+    position: absolute;
+    width: 60%;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+    padding: 20px;
+    background: unquote($backgroundBg + "91");
+    .head {
+      font-family: $themeFont3;
+      font-size: 2rem;
+      color: $themeColor;
+    }
+    .text {
+      font-family: $themeFont2;
+      font-size: 1.3rem;
+      color: $white;
+      letter-spacing: 1px;
+    }
+  }
+  .image {
+    width: 60%;
+    margin-left: auto;
+    aspect-ratio: 1/0.7;
+  }
+  &:nth-child(2n+1) {
+    .content {
+      left: initial;
+      right: 0;
+    }
+    .image {
+      margin-right: auto;
+      margin-left: 0;
+    }
+  }
+  &:nth-last-child(1) {
+    margin-bottom: 0;
+  }
+}

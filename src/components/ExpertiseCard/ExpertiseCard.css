@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Arsenal&family=Caveat&family=Mate+SC&family=Metal+Mania&family=Nosifer&display=swap");
+.image-content {
+  position: relative;
+  margin-bottom: 40px; }
+  .image-content .content {
+    position: absolute;
+    width: 60%;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+    padding: 20px;
+    background: #10101091; }
+    .image-content .content .head {
+      font-family: "Mate SC", serif;
+      font-size: 2rem;
+      color: #ff0000; }
+    .image-content .content .text {
+      font-family: "Caveat", cursive;
+      font-size: 1.3rem;
+      color: #ffffff;
+      letter-spacing: 1px; }
+  .image-content .image {
+    width: 60%;
+    margin-left: auto;
+    aspect-ratio: 1/0.7; }
+  .image-content:nth-child(2n+1) .content {
+    left: initial;
+    right: 0; }
+  .image-content:nth-child(2n+1) .image {
+    margin-right: auto;
+    margin-left: 0; }
+  .image-content:nth-last-child(1) {
+    margin-bottom: 0; }
+
+/*# sourceMappingURL=ExpertiseCard.css.map */

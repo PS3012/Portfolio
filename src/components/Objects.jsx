@@ -1,4 +1,5 @@
 import { faBootstrap, faCss3Alt, faGitAlt, faGithub, faHtml5, faJs, faReact, faSass } from "@fortawesome/free-brands-svg-icons"
+import { faHeadset, faEnvelopeCircleCheck, faSignsPost } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 export const whyChoose = [
@@ -45,6 +46,62 @@ export const works = [
         image: "/projects/venturingdigitally.png",
         name: "Venturing Digitally Website",
         link: "https://venturingdigitally.com/",
+        text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa quaerat saepe hic explicabo iste. Culpa dolor consectetur iure a dignissimos.",
+    },
+    {
+        id: 3,
+        image: "/projects/aimtechai.png",
+        name: "AimTechAI Website",
+        link: "https://aimtechai.in/",
+        text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa quaerat saepe hic explicabo iste. Culpa dolor consectetur iure a dignissimos.",
+    },
+    {
+        id: 4,
+        image: "/projects/sangeni.png",
+        name: "Sangeni Matrimony Website",
+        link: "https://sangenimatrimony.com/",
+        text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa quaerat saepe hic explicabo iste. Culpa dolor consectetur iure a dignissimos.",
+    },
+    {
+        id: 5,
+        image: "/projects/amogh.png",
+        name: "Amogh Ayurveda Website",
+        link: "https://amoghayurved.com/",
+        text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa quaerat saepe hic explicabo iste. Culpa dolor consectetur iure a dignissimos.",
+    },
+    {
+        id: 6,
+        image: "/projects/yashasvi.png",
+        name: "Yashasvi Enterprises Website",
+        link: "https://yashasvienterprise.com/",
+        text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa quaerat saepe hic explicabo iste. Culpa dolor consectetur iure a dignissimos.",
+    },
+    {
+        id: 7,
+        image: "/projects/classy.png",
+        name: "The Classy Website",
+        link: "https://theclassy.in/",
+        text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa quaerat saepe hic explicabo iste. Culpa dolor consectetur iure a dignissimos.",
+    },
+    {
+        id: 8,
+        image: "/projects/saengineering.png",
+        name: "SA Engineering Website",
+        link: "https://sa-engineering.in/",
+        text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa quaerat saepe hic explicabo iste. Culpa dolor consectetur iure a dignissimos.",
+    },
+    {
+        id: 9,
+        image: "/projects/qssence.png",
+        name: "Qssence Website",
+        link: "https://qssence.demoventuringdigitally.com/",
+        text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa quaerat saepe hic explicabo iste. Culpa dolor consectetur iure a dignissimos.",
+    },
+    {
+        id: 10,
+        image: "/projects/saidental.png",
+        name: "Sai Dental Website",
+        link: "https://sai-dental.demoventuringdigitally.com/",
         text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa quaerat saepe hic explicabo iste. Culpa dolor consectetur iure a dignissimos.",
     },
 ]
@@ -132,5 +189,50 @@ export const experience = [
         title: "Venturing Digitally | Bhopal",
         time: "February, 2023 - September, 2023",
         text: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo, at ea eligendi explicabo maxime ipsa fugit non? Non, vel, molestias odio quis dicta alias quidem, corrupti fugit officia rerum vero!",
+    },
+]
+
+export const myDetails = [
+    {
+        id: 1,
+        icon: <FontAwesomeIcon icon={faHeadset} />,
+        text: "+91 8765057868",
+    },
+    {
+        id: 2,
+        icon: <FontAwesomeIcon icon={faEnvelopeCircleCheck} />,
+        text: "pyushsahud123@gmail.com",
+    },
+    {
+        id: 3,
+        icon: <FontAwesomeIcon icon={faSignsPost} />,
+        text: "Jhansi, Uttar Pradesh",
+    },
+]
+
+export const expertise = [
+    {
+        id: 1,
+        image: "/explore/code.jpg",
+        head: "lorem ipsum dolor sit",
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque debitis enim sapiente nesciunt natus blanditiis voluptates totam incidunt molestiae odit rem facilis reiciendis dolores, ipsum officia quidem iure, ad aperiam facere sint. Laboriosam, impedit! Illum accusamus aspernatur temporibus similique nobis. Dolorum cum iste sed labore nulla minus recusandae numquam totam!",
+    },
+    {
+        id: 2,
+        image: "/explore/code.jpg",
+        head: "lorem ipsum dolor sit",
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque debitis enim sapiente nesciunt natus blanditiis voluptates totam incidunt molestiae odit rem facilis reiciendis dolores, ipsum officia quidem iure, ad aperiam facere sint. Laboriosam, impedit! Illum accusamus aspernatur temporibus similique nobis. Dolorum cum iste sed labore nulla minus recusandae numquam totam!",
+    },
+    {
+        id: 3,
+        image: "/explore/code.jpg",
+        head: "lorem ipsum dolor sit",
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque debitis enim sapiente nesciunt natus blanditiis voluptates totam incidunt molestiae odit rem facilis reiciendis dolores, ipsum officia quidem iure, ad aperiam facere sint. Laboriosam, impedit! Illum accusamus aspernatur temporibus similique nobis. Dolorum cum iste sed labore nulla minus recusandae numquam totam!",
+    },
+    {
+        id: 4,
+        image: "/explore/code.jpg",
+        head: "lorem ipsum dolor sit",
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque debitis enim sapiente nesciunt natus blanditiis voluptates totam incidunt molestiae odit rem facilis reiciendis dolores, ipsum officia quidem iure, ad aperiam facere sint. Laboriosam, impedit! Illum accusamus aspernatur temporibus similique nobis. Dolorum cum iste sed labore nulla minus recusandae numquam totam!",
     },
 ]

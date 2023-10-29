@@ -39,7 +39,17 @@
       font-weight: bold;
       font-size: 7rem;
       text-transform: uppercase;
-      text-align: center; }
+      text-align: center;
+      position: relative; }
+      #explore-page #main-section .bottom-text .curve-text {
+        position: absolute;
+        left: 0;
+        width: 120px;
+        top: 50%;
+        transform: translate(0, -50%);
+        text-align: initial;
+        cursor: crosshair;
+        display: block; }
   #explore-page #my-works {
     border-bottom: 1px solid #ffffff45; }
     #explore-page #my-works .inner-container {
@@ -144,62 +154,5 @@
           letter-spacing: 2px; }
           #explore-page #why-choose .inner-container .section-head .main-head span {
             color: #ff0000; }
-  #explore-page #contact-me {
-    border-bottom: 1px solid #ffffff45; }
-    #explore-page #contact-me .inner-container {
-      border-left: 1px solid #ffffff45;
-      padding: 50px 0 50px 30px; }
-      #explore-page #contact-me .inner-container .section-head {
-        margin-bottom: 50px; }
-        #explore-page #contact-me .inner-container .section-head .main-head {
-          font-size: 3rem;
-          color: #ffffff;
-          text-align: left;
-          font-family: "Nosifer", sans-serif;
-          letter-spacing: 2px; }
-          #explore-page #contact-me .inner-container .section-head .main-head span {
-            color: #ff0000; }
-    #explore-page #contact-me .inner-grid {
-      display: grid;
-      grid-template-columns: 3fr 1fr;
-      align-items: center;
-      gap: 30px; }
-      #explore-page #contact-me .inner-grid .form-block .group-input {
-        margin-bottom: 20px;
-        display: grid;
-        grid-template-columns: 150px 1fr;
-        border: 1px solid #ffffff45;
-        border-radius: 5px; }
-        #explore-page #contact-me .inner-grid .form-block .group-input label {
-          color: #ffffff;
-          font-family: "Caveat", cursive;
-          display: grid;
-          place-items: center;
-          border-right: 1px solid #ffffff45; }
-        #explore-page #contact-me .inner-grid .form-block .group-input input,
-        #explore-page #contact-me .inner-grid .form-block .group-input textarea {
-          width: 100%;
-          display: block;
-          padding: 5px 15px;
-          background: #ffffff3d; }
-      #explore-page #contact-me .inner-grid .detail-block .icon {
-        background: #ff0000;
-        color: #ffffff;
-        border-radius: 50%;
-        aspect-ratio: 1/1;
-        width: 80px;
-        display: grid;
-        place-items: center;
-        font-size: 2.5rem;
-        transform: rotate(45deg);
-        margin-bottom: 20px; }
-      #explore-page #contact-me .inner-grid .detail-block .block {
-        margin-bottom: 10px; }
-        #explore-page #contact-me .inner-grid .detail-block .block:nth-last-child(1) {
-          margin-bottom: 0; }
-        #explore-page #contact-me .inner-grid .detail-block .block div {
-          color: #ffffff;
-          font-family: "Mate SC", serif;
-          font-size: 1.2rem; }
 
 /*# sourceMappingURL=Explore.css.map */
