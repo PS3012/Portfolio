@@ -19,10 +19,16 @@
         text-transform: uppercase;
         letter-spacing: 2px;
         writing-mode: vertical-lr;
+        @media screen and (max-width:576px) {
+            display: none;
+        }
     }
     .line {
         background: white;
         width: 2px;
         height: 70px;
+        @media screen and (max-width:576px) {
+            display: none;
+        }
     }
 }

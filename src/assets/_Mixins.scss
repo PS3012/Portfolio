@@ -10,6 +10,9 @@
       gap: 10px;
       font-family: $themeFont3;
       color: white;
+      @media screen and (max-width:576px) {
+        font-size: 1.7rem;
+      }
     }
     .slogan {
       font-size: 0.9rem;
@@ -18,6 +21,9 @@
       text-align: center;
       letter-spacing: 2px;
       font-family: $themeFont2;
+    }
+    @media screen and (max-width:576px) {
+      font-size: 0.8rem;
     }
   }
 }

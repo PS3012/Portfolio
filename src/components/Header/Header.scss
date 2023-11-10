@@ -23,12 +23,39 @@ header {
         align-items: center;
         padding: 20px;
         @include logo();
+        @media screen and (max-width:576px) {
+            padding: 20px 5px;
+        }
         .link-block {
             display: flex;
             gap: 20px;
+            @media screen and (max-width: 768px) {
+                position: absolute;
+                width: 100vw;
+                height: 100vh;
+                background: $backgroundBg;
+                top: 0;
+                left: 0;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            .close-btn {
+                display: none;
+                @media screen and (max-width:768px) {
+                    display: block;
+                    position: absolute;
+                    top: 20px;
+                    right: 20px;
+                }
+            }
             a {
                 font-size: 1.2rem;
                 position: relative;
+                @media screen and (max-width: 768px) {
+                    font-size: 1.7rem;
+                    font-family: $themeFont4;
+                }
                 &::after {
                     content: "";
                     position: absolute;
@@ -43,6 +70,12 @@ header {
                 &.active::after {
                     width: 50%;
                 }
+            }
+        }
+        .mobile-menu-btn {
+            display: none;
+            @media screen and (max-width: 768px) {
+                display: block;
             }
         }
     }

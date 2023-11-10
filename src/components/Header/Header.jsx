@@ -6,6 +6,7 @@ import './Header.css'
 function Header() {
     const location = useLocation();
     const [headerBg, setHeaderBg] = useState(false);
+    const [links, setLinks] = useState(window.innerWidth >= 768);
 
     useEffect(() => {
         const handleScroll = () => {
@@ -20,6 +21,17 @@ function Header() {
             window.removeEventListener('scroll', handleScroll);
         };
     }, []);
+
+    useEffect(() => {
+        const handleResize = () => {
+            setLinks(window.innerWidth >= 768);
+        };
+        window.addEventListener('resize', handleResize);
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
+
     return (
         <>
 
@@ -39,28 +51,43 @@ function Header() {
                                 <div className="slogan">Crafting Experiences!</div>
                             </Link>
 
-                            {/* LINKS */}
-                            <div className="link-block">
-                                <Link to="/explore" className={location.pathname === "/explore" ? "active" : ""}>
-                                    Explore
-                                </Link>
-                                <Link to="/about" className={location.pathname === "/about" ? "active" : ""}>
-                                    About
-                                </Link>
-                                <Link to="/expertise" className={location.pathname === "/expertise" ? "active" : ""}>
-                                    Expertise
-                                </Link>
-                                <Link to="/projects" className={location.pathname === "/projects" ? "active" : ""}>
-                                    Projects
-                                </Link>
-                                <Link to="/contact" className={location.pathname === "/contact" ? "active" : ""}>
-                                    Contact
-                                </Link>
+                            {links &&
+                                // {/* LINKS */ }
+                                <div className="link-block">
+                                    <Link to="/explore" className={location.pathname === "/explore" ? "active" : ""}>
+                                        Explore
+                                    </Link>
+                                    <Link to="/about" className={location.pathname === "/about" ? "active" : ""}>
+                                        About
+                                    </Link>
+                                    <Link to="/expertise" className={location.pathname === "/expertise" ? "active" : ""}>
+                                        Expertise
+                                    </Link>
+                                    <Link to="/projects" className={location.pathname === "/projects" ? "active" : ""}>
+                                        Projects
+                                    </Link>
+                                    <Link to="/contact" className={location.pathname === "/contact" ? "active" : ""}>
+                                        Contact
+                                    </Link>
+                                    <div className="close-btn" onClick={() => setLinks(false)}>
+                                        <svg width="48" height="48" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill="#ffffff" d="m11.4 12.788l2.1-2.1l2.1 2.1l.688-.688l-2.1-2.1l2.1-2.1l-.688-.688l-2.1 2.1l-2.1-2.1l-.688.688l2.1 2.1l-2.1 2.1l.688.688ZM6.5 17V3h14v14h-14Zm-3 3V6.615h1V19h12.385v1H3.5Z" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            }
+
+                            {/* MOBILE MENU BUTTON */}
+                            <div className="mobile-menu-btn" onClick={() => setLinks(true)}>
+                                <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill="#ffffff" fillRule="evenodd" d="M3 6.75A.75.75 0 0 1 3.75 6h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 6.75ZM3 12a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 12Zm0 5.25a.75.75 0 0 1 .75-.75H12a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Z" clipRule="evenodd" />
+                                </svg>
                             </div>
+
                         </div>
                     </div>
                 </div>
-            </header>
+            </header >
 
         </>
     )

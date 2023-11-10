@@ -15,9 +15,15 @@
     text-transform: uppercase;
     letter-spacing: 2px;
     writing-mode: vertical-lr; }
+    @media screen and (max-width: 576px) {
+      #fixed-social .text {
+        display: none; } }
   #fixed-social .line {
     background: white;
     width: 2px;
     height: 70px; }
+    @media screen and (max-width: 576px) {
+      #fixed-social .line {
+        display: none; } }
 
 /*# sourceMappingURL=FixedSocialIcons.css.map */
