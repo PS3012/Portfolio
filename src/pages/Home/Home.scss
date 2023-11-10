@@ -9,7 +9,7 @@
   min-height: 100vh;
   background-blend-mode: color-dodge;
   background-size: cover;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 991px) {
     background-position: center;
     background-attachment: fixed;
   }
@@ -31,9 +31,9 @@
       padding-top: 100px;
       @media screen and (max-width: 991px) {
         padding-top: 150px;
+        height: 100vh;
       }
       @media screen and (max-width: 768px) {
-        height: 100vh;
         padding-top: 90px;
       }
       .top-content {
@@ -111,15 +111,12 @@
         grid-template-columns: 1fr 2fr 0.5fr;
         align-items: baseline;
         @media screen and (max-width: 991px) {
-          grid-template-columns: 1fr 2fr 0fr;
-        }
-        @media screen and (max-width: 768px) {
           grid-template-columns: 1fr;
           gap: 30px;
         }
         .contact {
           color: $white;
-          @media screen and (max-width: 768px) {
+          @media screen and (max-width: 991px) {
             order: 2;
           }
           .block {
@@ -131,24 +128,25 @@
         }
         .about {
           color: $white;
-          font-size: 1.3rem;
+          font-size: 1rem;
           font-family: $themeFont3;
           letter-spacing: 2px;
           @include wordHighlight(span, $themeColor);
-          @media screen and (max-width: 768px) {
+          @media screen and (max-width: 991px) {
             order: 1;
             padding-right: 30px;
           }
           @media screen and (max-width: 576px) {
             padding-right: 0px;
+            font-size: 0.9rem;
           }
           &:first-letter {
-            font-size: 2rem;
+            font-size: 1.6rem;
             color: $themeColor;
             font-weight: bold;
-          }
-          @media screen and (max-width: 1200px) {
-            font-size: 1.2rem;
+            @media screen and (max-width: 576px) {
+              font-size: 1.5rem;
+            }
           }
         }
       }

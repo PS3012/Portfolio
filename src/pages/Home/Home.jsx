@@ -17,9 +17,11 @@ function Home() {
                     <div className="top-container">
                         <div className="container">
                             <div className="top-content">
-                                <div className="text">Lorem ipsum <span>dolor sit</span> amet consectetur adipisicing elit <span>adipisicing</span> elit consectetur adipisicing.</div>
+                                <div className="text">
+                                    Elevating <span>Digital</span> Presence with <span>Innovative</span> Design and <span>Flawless Development</span> Solutions.
+                                </div>
                                 <div className="btn-bar">
-                                    <a href="#" download className="action-btn"><FontAwesomeIcon icon={faDownload} />&nbsp; My Resume</a>
+                                    <a href="/Piyush_Sahu_Resume.pdf" download className="action-btn"><FontAwesomeIcon icon={faDownload} />&nbsp; My Resume</a>
                                     <Link to="/explore" className="action-btn"><FontAwesomeIcon icon={faWpexplorer} />&nbsp; Explore</Link>
                                 </div>
                             </div>
@@ -39,7 +41,11 @@ function Home() {
                                     </div>
                                 </div>
                                 <div className="about">
-                                    Lorem ipsum, dolor sit amet <span>consectetur adipisicing</span> elit. Quos eius, consequatur <span>quod libero reprehenderit</span> veritatis recusandae cupiditate <span>rerum distinctio</span> facere.
+                                    Welcome to my digital space! I&lsquo;m a dynamic web developer and designer passionate 
+                                    about transforming concepts into captivating digital experiences. My approach merges 
+                                    technical precision with creative flair, ensuring each project reflects innovation and 
+                                    functionality. Join me on a journey where every line of code tells a story, and design 
+                                    meets excellence. Let&lsquo;s create a digital narrative that leaves a lasting impact.
                                 </div>
                             </div>
                         </div>

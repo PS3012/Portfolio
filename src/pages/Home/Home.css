@@ -4,7 +4,7 @@
   min-height: 100vh;
   background-blend-mode: color-dodge;
   background-size: cover; }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 991px) {
     #head-container, #head-container .section-content {
       background-position: center;
       background-attachment: fixed; } }
@@ -24,10 +24,10 @@
       padding-top: 100px; }
       @media screen and (max-width: 991px) {
         #head-container .section-content .top-container {
-          padding-top: 150px; } }
+          padding-top: 150px;
+          height: 100vh; } }
       @media screen and (max-width: 768px) {
         #head-container .section-content .top-container {
-          height: 100vh;
           padding-top: 90px; } }
       #head-container .section-content .top-container .top-content {
         display: flex;
@@ -99,14 +99,11 @@
         align-items: baseline; }
         @media screen and (max-width: 991px) {
           #head-container .section-content .bottom-container .bottom-content {
-            grid-template-columns: 1fr 2fr 0fr; } }
-        @media screen and (max-width: 768px) {
-          #head-container .section-content .bottom-container .bottom-content {
             grid-template-columns: 1fr;
             gap: 30px; } }
         #head-container .section-content .bottom-container .bottom-content .contact {
           color: #ffffff; }
-          @media screen and (max-width: 768px) {
+          @media screen and (max-width: 991px) {
             #head-container .section-content .bottom-container .bottom-content .contact {
               order: 2; } }
           #head-container .section-content .bottom-container .bottom-content .contact .block {
@@ -115,25 +112,26 @@
               margin-bottom: 0; }
         #head-container .section-content .bottom-container .bottom-content .about {
           color: #ffffff;
-          font-size: 1.3rem;
+          font-size: 1rem;
           font-family: "Mate SC", serif;
           letter-spacing: 2px; }
           #head-container .section-content .bottom-container .bottom-content .about span {
             color: #ff0000;
             font-weight: initial; }
-          @media screen and (max-width: 768px) {
+          @media screen and (max-width: 991px) {
             #head-container .section-content .bottom-container .bottom-content .about {
               order: 1;
               padding-right: 30px; } }
           @media screen and (max-width: 576px) {
             #head-container .section-content .bottom-container .bottom-content .about {
-              padding-right: 0px; } }
+              padding-right: 0px;
+              font-size: 0.9rem; } }
           #head-container .section-content .bottom-container .bottom-content .about:first-letter {
-            font-size: 2rem;
+            font-size: 1.6rem;
             color: #ff0000;
             font-weight: bold; }
-          @media screen and (max-width: 1200px) {
-            #head-container .section-content .bottom-container .bottom-content .about {
-              font-size: 1.2rem; } }
+            @media screen and (max-width: 576px) {
+              #head-container .section-content .bottom-container .bottom-content .about:first-letter {
+                font-size: 1.5rem; } }
 
 /*# sourceMappingURL=Home.css.map */
