@@ -10,7 +10,7 @@
     @include sectionInitials(center, 0);
     .inner-grid {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
       gap: 30px;
       .detail-card {
         box-shadow: 5px 5px 10px #0c0c0c, -5px -5px 10px #141414;
@@ -33,6 +33,12 @@
         .text {
           font-family: $themeFont3;
           font-size: 1.2rem;
+          @media screen and (max-width:768px) {
+            font-size: 1.1rem;
+          }
+          @media screen and (max-width:576px) {
+            font-size: 1rem;
+          }
         }
       }
     }
@@ -43,6 +49,9 @@
       display: grid;
       grid-template-columns: 1fr 1.5fr;
       gap: 30px;
+      @media screen and (max-width:991px) {
+        grid-template-columns: 1fr;
+      }
       .form-block {
         box-shadow: 5px 5px 10px #0c0c0c, -5px -5px 10px #141414;
         padding: 20px;
@@ -55,6 +64,12 @@
           margin-bottom: 20px;
           text-transform: uppercase;
           font-weight: bold;
+          @media screen and (max-width:768px) {
+            font-size: 1.6rem;
+          }
+          @media screen and (max-width:576px) {
+            font-size: 1.3rem;
+          }
         }
         .group-input {
           box-shadow: inset 5px 5px 10px #0c0c0c, inset -5px -5px 10px #141414;
@@ -67,6 +82,9 @@
           label {
             color: $white;
             font-family: $themeFont3;
+            @media screen and (max-width: 576px) {
+              font-size: 0.9rem;
+            }
           }
           input {
             display: block;
@@ -83,6 +101,12 @@
           justify-content: center;
           align-items: center;
           gap: 30px;
+          @media screen and (max-width: 576px) {
+            gap: 20px;
+          }
+          @media screen and (max-width: 400px) {
+            gap: 10px;
+          }
         }
       }
     }

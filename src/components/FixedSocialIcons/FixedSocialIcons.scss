@@ -19,7 +19,7 @@
         text-transform: uppercase;
         letter-spacing: 2px;
         writing-mode: vertical-lr;
-        @media screen and (max-width:576px) {
+        @media screen and (max-width:768px) {
             display: none;
         }
     }
@@ -27,7 +27,7 @@
         background: white;
         width: 2px;
         height: 70px;
-        @media screen and (max-width:576px) {
+        @media screen and (max-width:768px) {
             display: none;
         }
     }

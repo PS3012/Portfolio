@@ -54,6 +54,10 @@ button {
   font-family: "Mate SC", serif;
   display: grid;
   place-items: center; }
+  @media screen and (max-width: 576px) {
+    .box-button {
+      height: 40px;
+      padding: 0 20px; } }
   .box-button:before {
     content: "";
     position: absolute;
@@ -61,8 +65,9 @@ button {
     transition: all 0.2s linear;
     width: calc(100% + 6px);
     height: calc(100% - 16px);
-    top: 8px;
-    left: -3px; }
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
   .box-button::after {
     content: "";
     position: absolute;
@@ -70,16 +75,15 @@ button {
     transition: all 0.2s linear;
     width: calc(100% - 16px);
     height: calc(100% + 6px);
-    top: -3px;
-    left: 8px; }
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
   .box-button:hover {
     cursor: crosshair; }
     .box-button:hover::before {
-      height: calc(100% - 32px);
-      top: 16px; }
+      height: calc(100% - 24px); }
     .box-button:hover::after {
-      width: calc(100% - 32px);
-      left: 16px; }
+      width: calc(100% - 32px); }
   .box-button span {
     font-size: 1.2rem;
     z-index: 2;
@@ -87,6 +91,9 @@ button {
     text-transform: uppercase;
     letter-spacing: 2px;
     color: #ffffff; }
+    @media screen and (max-width: 576px) {
+      .box-button span {
+        font-size: 1rem; } }
 
 header {
   position: fixed;
@@ -169,8 +176,14 @@ header {
           height: 3px;
           border-radius: 5px;
           width: 0%; }
+          @media screen and (max-width: 768px) {
+            header .inner-grid .link-block a::after {
+              transform: translate(-50%, 0px); } }
         header .inner-grid .link-block a.active::after {
           width: 50%; }
+        @media screen and (max-width: 768px) {
+          header .inner-grid .link-block a.active {
+            color: #ff0000; } }
     header .inner-grid .mobile-menu-btn {
       display: none; }
       @media screen and (max-width: 768px) {

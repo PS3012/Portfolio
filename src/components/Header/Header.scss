@@ -23,7 +23,7 @@ header {
         align-items: center;
         padding: 20px;
         @include logo();
-        @media screen and (max-width:576px) {
+        @media screen and (max-width: 576px) {
             padding: 20px 5px;
         }
         .link-block {
@@ -42,7 +42,7 @@ header {
             }
             .close-btn {
                 display: none;
-                @media screen and (max-width:768px) {
+                @media screen and (max-width: 768px) {
                     display: block;
                     position: absolute;
                     top: 20px;
@@ -66,9 +66,17 @@ header {
                     height: 3px;
                     border-radius: 5px;
                     width: 0%;
+                    @media screen and (max-width: 768px) {
+                        transform: translate(-50%, 0px);
+                    }
                 }
-                &.active::after {
-                    width: 50%;
+                &.active {
+                    &::after {
+                        width: 50%;
+                    }
+                    @media screen and (max-width: 768px) {
+                        color: $themeColor;
+                    }
                 }
             }
         }

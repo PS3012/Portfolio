@@ -5,8 +5,18 @@ footer {
   footer .inner-container {
     border-center: 0px solid #ffffff45;
     padding: 50px 0; }
+    @media screen and (max-width: 768px) {
+      footer .inner-container {
+        padding: 40px 0;
+        border: 0; } }
     footer .inner-container .section-head {
       margin-bottom: 50px; }
+      @media screen and (max-width: 991px) {
+        footer .inner-container .section-head {
+          margin-bottom: 40px; } }
+      @media screen and (max-width: 768px) {
+        footer .inner-container .section-head {
+          margin-bottom: 30px; } }
       footer .inner-container .section-head .main-head {
         font-size: 3rem;
         color: #ffffff;
@@ -15,6 +25,16 @@ footer {
         letter-spacing: 2px; }
         footer .inner-container .section-head .main-head span {
           color: #ff0000; }
+        @media screen and (max-width: 991px) {
+          footer .inner-container .section-head .main-head {
+            font-size: 2rem; } }
+        @media screen and (max-width: 768px) {
+          footer .inner-container .section-head .main-head {
+            font-size: 1.6rem;
+            text-align: center; } }
+        @media screen and (max-width: 576px) {
+          footer .inner-container .section-head .main-head {
+            font-size: 1.3rem; } }
   footer .inner-container {
     padding-bottom: 10px; }
     footer .inner-container .section-head {
@@ -22,8 +42,12 @@ footer {
   footer .links {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     align-items: center;
     margin-bottom: 30px; }
+    @media screen and (max-width: 576px) {
+      footer .links {
+        gap: 15px 0px; } }
     footer .links a {
       padding: 2px 15px;
       color: #ff0000;
@@ -37,6 +61,13 @@ footer {
         border-right: 0px; }
       footer .links a:hover {
         color: #ffffff; }
+      @media screen and (max-width: 576px) {
+        footer .links a {
+          width: 33%;
+          text-align: center;
+          padding: 2px 12px; }
+          footer .links a:nth-child(3n) {
+            border-right: 0px; } }
   footer .copyright {
     text-align: center;
     color: white;

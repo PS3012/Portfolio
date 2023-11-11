@@ -38,19 +38,19 @@ function ContactForm() {
                                     <form onSubmit={handleSubmit} ref={form}>
                                         <div className="group-input">
                                             <label htmlFor="name">Name</label>
-                                            <input type="text" name="name" />
+                                            <input type="text" name="name" required />
                                         </div>
                                         <div className="group-input">
                                             <label htmlFor="number">Contact Number</label>
-                                            <input type="number" name="number" />
+                                            <input type="number" name="number" required />
                                         </div>
                                         <div className="group-input">
                                             <label htmlFor="email">E-Mail</label>
-                                            <input type="email" name="email" />
+                                            <input type="email" name="email" required />
                                         </div>
                                         <div className="group-input">
                                             <label htmlFor="message">Message</label>
-                                            <textarea name="message"></textarea>
+                                            <textarea name="message" required></textarea>
                                         </div>
                                         <div className="btn-block">
                                             <button className="box-button">

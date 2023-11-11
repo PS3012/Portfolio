@@ -190,6 +190,12 @@ export const experience = [
         time: "February, 2023 - September, 2023",
         text: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo, at ea eligendi explicabo maxime ipsa fugit non? Non, vel, molestias odio quis dicta alias quidem, corrupti fugit officia rerum vero!",
     },
+    {
+        id: 3,
+        title: "Qssence | Pune",
+        time: "November, 2023 - Present",
+        text: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo, at ea eligendi explicabo maxime ipsa fugit non? Non, vel, molestias odio quis dicta alias quidem, corrupti fugit officia rerum vero!",
+    },
 ]
 
 export const myDetails = [

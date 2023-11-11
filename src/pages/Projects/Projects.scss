@@ -12,6 +12,15 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 60px 30px;
+        @media screen and (max-width:991px) {
+            grid-template-columns: 1fr;
+        }
+        @media screen and (max-width:768px) {
+            gap: 40px;
+        }
+        @media screen and (max-width:576px) {
+            gap: 30px;
+        }
     }
   }
 }

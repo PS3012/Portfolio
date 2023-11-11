@@ -64,6 +64,10 @@ button {
   font-family: $themeFont3;
   display: grid;
   place-items: center;
+  @media screen and (max-width: 576px) {
+    height: 40px;
+    padding: 0 20px;
+  }
   &:before {
     content: "";
     position: absolute;
@@ -71,8 +75,9 @@ button {
     transition: all 0.2s linear;
     width: calc(100% + 6px);
     height: calc(100% - 16px);
-    top: 8px;
-    left: -3px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
   &::after {
     content: "";
@@ -81,18 +86,17 @@ button {
     transition: all 0.2s linear;
     width: calc(100% - 16px);
     height: calc(100% + 6px);
-    top: -3px;
-    left: 8px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
   &:hover {
     cursor: crosshair;
     &::before {
-      height: calc(100% - 32px);
-      top: 16px;
+      height: calc(100% - 24px);
     }
     &::after {
       width: calc(100% - 32px);
-      left: 16px;
     }
   }
   span {
@@ -102,5 +106,8 @@ button {
     text-transform: uppercase;
     letter-spacing: 2px;
     color: $white;
+    @media screen and (max-width: 576px) {
+      font-size: 1rem;
+    }
   }
 }

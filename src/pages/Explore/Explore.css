@@ -2,6 +2,9 @@
 #explore-page {
   background: #101010;
   padding-top: 120px; }
+  @media screen and (max-width: 768px) {
+    #explore-page {
+      padding-top: 100px; } }
   #explore-page #main-section {
     padding-bottom: 20px;
     border-bottom: 1px solid #ffffff45; }
@@ -55,8 +58,18 @@
     #explore-page #my-works .inner-container {
       border-left: 1px solid #ffffff45;
       padding: 50px 0 50px 30px; }
+      @media screen and (max-width: 768px) {
+        #explore-page #my-works .inner-container {
+          padding: 40px 0;
+          border: 0; } }
       #explore-page #my-works .inner-container .section-head {
         margin-bottom: 50px; }
+        @media screen and (max-width: 991px) {
+          #explore-page #my-works .inner-container .section-head {
+            margin-bottom: 40px; } }
+        @media screen and (max-width: 768px) {
+          #explore-page #my-works .inner-container .section-head {
+            margin-bottom: 30px; } }
         #explore-page #my-works .inner-container .section-head .main-head {
           font-size: 3rem;
           color: #ffffff;
@@ -65,6 +78,16 @@
           letter-spacing: 2px; }
           #explore-page #my-works .inner-container .section-head .main-head span {
             color: #ff0000; }
+          @media screen and (max-width: 991px) {
+            #explore-page #my-works .inner-container .section-head .main-head {
+              font-size: 2rem; } }
+          @media screen and (max-width: 768px) {
+            #explore-page #my-works .inner-container .section-head .main-head {
+              font-size: 1.6rem;
+              text-align: center; } }
+          @media screen and (max-width: 576px) {
+            #explore-page #my-works .inner-container .section-head .main-head {
+              font-size: 1.3rem; } }
     #explore-page #my-works .work-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -81,8 +104,18 @@
     #explore-page #futuristic .inner-container {
       border-right: 0px solid #ffffff45;
       padding: 50px 0; }
+      @media screen and (max-width: 768px) {
+        #explore-page #futuristic .inner-container {
+          padding: 40px 0;
+          border: 0; } }
       #explore-page #futuristic .inner-container .section-head {
         margin-bottom: 50px; }
+        @media screen and (max-width: 991px) {
+          #explore-page #futuristic .inner-container .section-head {
+            margin-bottom: 40px; } }
+        @media screen and (max-width: 768px) {
+          #explore-page #futuristic .inner-container .section-head {
+            margin-bottom: 30px; } }
         #explore-page #futuristic .inner-container .section-head .main-head {
           font-size: 3rem;
           color: #ffffff;
@@ -91,6 +124,16 @@
           letter-spacing: 2px; }
           #explore-page #futuristic .inner-container .section-head .main-head span {
             color: #ff0000; }
+          @media screen and (max-width: 991px) {
+            #explore-page #futuristic .inner-container .section-head .main-head {
+              font-size: 2rem; } }
+          @media screen and (max-width: 768px) {
+            #explore-page #futuristic .inner-container .section-head .main-head {
+              font-size: 1.6rem;
+              text-align: center; } }
+          @media screen and (max-width: 576px) {
+            #explore-page #futuristic .inner-container .section-head .main-head {
+              font-size: 1.3rem; } }
     #explore-page #futuristic .video-bg {
       margin-bottom: -5px; }
     #explore-page #futuristic .content-container {
@@ -125,8 +168,18 @@
     #explore-page #technologies .inner-container {
       border-center: 0px solid #ffffff45;
       padding: 50px 0; }
+      @media screen and (max-width: 768px) {
+        #explore-page #technologies .inner-container {
+          padding: 40px 0;
+          border: 0; } }
       #explore-page #technologies .inner-container .section-head {
         margin-bottom: 50px; }
+        @media screen and (max-width: 991px) {
+          #explore-page #technologies .inner-container .section-head {
+            margin-bottom: 40px; } }
+        @media screen and (max-width: 768px) {
+          #explore-page #technologies .inner-container .section-head {
+            margin-bottom: 30px; } }
         #explore-page #technologies .inner-container .section-head .main-head {
           font-size: 3rem;
           color: #ffffff;
@@ -135,6 +188,16 @@
           letter-spacing: 2px; }
           #explore-page #technologies .inner-container .section-head .main-head span {
             color: #ff0000; }
+          @media screen and (max-width: 991px) {
+            #explore-page #technologies .inner-container .section-head .main-head {
+              font-size: 2rem; } }
+          @media screen and (max-width: 768px) {
+            #explore-page #technologies .inner-container .section-head .main-head {
+              font-size: 1.6rem;
+              text-align: center; } }
+          @media screen and (max-width: 576px) {
+            #explore-page #technologies .inner-container .section-head .main-head {
+              font-size: 1.3rem; } }
     #explore-page #technologies .tech-grid {
       display: grid;
       grid-template-columns: repeat(9, 1fr);
@@ -144,8 +207,18 @@
     #explore-page #why-choose .inner-container {
       border-center: 0px solid #ffffff45;
       padding: 50px 0; }
+      @media screen and (max-width: 768px) {
+        #explore-page #why-choose .inner-container {
+          padding: 40px 0;
+          border: 0; } }
       #explore-page #why-choose .inner-container .section-head {
         margin-bottom: 50px; }
+        @media screen and (max-width: 991px) {
+          #explore-page #why-choose .inner-container .section-head {
+            margin-bottom: 40px; } }
+        @media screen and (max-width: 768px) {
+          #explore-page #why-choose .inner-container .section-head {
+            margin-bottom: 30px; } }
         #explore-page #why-choose .inner-container .section-head .main-head {
           font-size: 3rem;
           color: #ffffff;
@@ -154,5 +227,15 @@
           letter-spacing: 2px; }
           #explore-page #why-choose .inner-container .section-head .main-head span {
             color: #ff0000; }
+          @media screen and (max-width: 991px) {
+            #explore-page #why-choose .inner-container .section-head .main-head {
+              font-size: 2rem; } }
+          @media screen and (max-width: 768px) {
+            #explore-page #why-choose .inner-container .section-head .main-head {
+              font-size: 1.6rem;
+              text-align: center; } }
+          @media screen and (max-width: 576px) {
+            #explore-page #why-choose .inner-container .section-head .main-head {
+              font-size: 1.3rem; } }
 
 /*# sourceMappingURL=Explore.css.map */

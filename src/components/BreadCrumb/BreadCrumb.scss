@@ -13,31 +13,66 @@
             color: unquote($white + "20");
             text-align: center;
             font-family: $themeFont6;
+            @media screen and (max-width: 1200px) {
+                font-size: 18rem;
+            }
+            @media screen and (max-width: 991px) {
+                font-size: 15rem;
+            }
+            @media screen and (max-width: 768px) {
+                font-size: 12rem;
+            }
+            @media screen and (max-width: 576px) {
+                font-size: 9rem;
+            }
+            @media screen and (max-width: 400px) {
+                font-size: 6rem;
+            }
         }
         .overlay-text {
             position: absolute;
             top: 50%;
-            transform: translate(0, -50%);
-            left: 0;
-            right: 0;
-            width: 100%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: max-content;
+            z-index: 2;
             .top {
                 color: $themeColor;
                 font-family: $themeFont2;
                 font-size: 1.4rem;
                 line-height: 1;
                 letter-spacing: 1px;
-            
+                @media screen and (max-width: 768px) {
+                    font-size: 1.2rem;
+                }
+                @media screen and (max-width: 576px) {
+                    font-size: 1rem;
+                }
             }
             .middle {
                 text-transform: uppercase;
                 text-shadow: 10px 18px 35px unquote($white + "40");
                 text-align: center;
                 color: $white;
-                font-size: 14rem;
+                font-size: 12rem;
                 font-family: $themeFont6;
                 font-weight: bold;
                 line-height: 1;
+                @media screen and (max-width: 1200px) {
+                    font-size: 10rem;
+                }
+                @media screen and (max-width: 991px) {
+                    font-size: 7.5rem;
+                }
+                @media screen and (max-width: 768px) {
+                    font-size: 5rem;
+                }
+                @media screen and (max-width: 576px) {
+                    font-size: 3.5rem;
+                }
+                @media screen and (max-width: 400px) {
+                    font-size: 2.5rem;
+                }
             }
             .bottom {
                 @extend .top;

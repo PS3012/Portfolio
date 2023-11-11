@@ -32,6 +32,12 @@ function Header() {
         };
     }, []);
 
+    const handleClick = () => {
+        if (window.innerWidth < 768) {
+            setLinks(false);
+        }
+    };
+
     return (
         <>
 
@@ -54,19 +60,19 @@ function Header() {
                             {links &&
                                 // {/* LINKS */ }
                                 <div className="link-block">
-                                    <Link to="/explore" className={location.pathname === "/explore" ? "active" : ""}>
+                                    <Link to="/explore" onClick={handleClick} className={location.pathname === "/explore" ? "active" : ""}>
                                         Explore
                                     </Link>
-                                    <Link to="/about" className={location.pathname === "/about" ? "active" : ""}>
+                                    <Link to="/about" onClick={handleClick} className={location.pathname === "/about" ? "active" : ""}>
                                         About
                                     </Link>
-                                    <Link to="/expertise" className={location.pathname === "/expertise" ? "active" : ""}>
+                                    <Link to="/expertise" onClick={handleClick} className={location.pathname === "/expertise" ? "active" : ""}>
                                         Expertise
                                     </Link>
-                                    <Link to="/projects" className={location.pathname === "/projects" ? "active" : ""}>
+                                    <Link to="/projects" onClick={handleClick} className={location.pathname === "/projects" ? "active" : ""}>
                                         Projects
                                     </Link>
-                                    <Link to="/contact" className={location.pathname === "/contact" ? "active" : ""}>
+                                    <Link to="/contact" onClick={handleClick} className={location.pathname === "/contact" ? "active" : ""}>
                                         Contact
                                     </Link>
                                     <div className="close-btn" onClick={() => setLinks(false)}>

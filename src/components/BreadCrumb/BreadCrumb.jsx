@@ -5,7 +5,7 @@ function BreadCrumb(_props) {
         <>
 
             <div id="custom-bread">
-                <div className="container">
+                <div className="container-fluid">
                     <div className="section-content">
                         <div className="bg-text">
                             <div>PS</div>

@@ -12,6 +12,9 @@
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 30px;
+      @media screen and (max-width: 1200px) {
+        grid-template-columns: 1fr;
+      }
       .content-block {
         .head {
           color: $themeColor;
@@ -22,11 +25,23 @@
           span {
             color: $white;
           }
+          @media screen and (max-width: 991px) {
+            font-size: 2.5rem;
+          }
+          @media screen and (max-width: 768px) {
+            font-size: 2.2rem;
+          }
+          @media screen and (max-width: 576px) {
+            font-size: 1.8rem;
+          }
         }
         .content {
           color: $white;
           font-family: $themeFont6;
           margin-bottom: 10px;
+          @media screen and (max-width: 576px) {
+            font-size: 0.9rem;
+          }
         }
         .redirect {
           display: flex;
@@ -48,6 +63,9 @@
       text-align: center;
       font-family: $themeFont3;
       margin-bottom: 20px;
+      @media screen and (max-width: 768px) {
+        font-size: 0.9rem;
+      }
     }
     .btn-block {
       display: flex;
@@ -60,7 +78,9 @@
     @include sectionInitials(right, 1);
     .resume-tabs {
       .tab-btn {
-        box-shadow: 5px 5px 10px #0c0c0c, -5px -5px 10px #141414;
+        box-shadow:
+          5px 5px 10px #0c0c0c,
+          -5px -5px 10px #141414;
         background: black;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -75,6 +95,17 @@
           font-family: $themeFont3;
           font-size: 1.5rem;
           border: 2px solid transparent;
+          @media screen and (max-width: 991px) {
+            font-size: 1.3rem;
+          }
+          @media screen and (max-width: 768px) {
+            font-size: 1.1rem;
+            padding: 12px 15px;
+          }
+          @media screen and (max-width: 576px) {
+            font-size: 1rem;
+            padding: 8px 10px;
+          }
           &:hover {
             color: $themeColor;
           }
@@ -89,6 +120,18 @@
           display: grid;
           grid-template-columns: repeat(6, 1fr);
           gap: 30px;
+          @media screen and (max-width: 1200px) {
+            grid-template-columns: repeat(5, 1fr);
+          }
+          @media screen and (max-width: 991px) {
+            grid-template-columns: repeat(4, 1fr);
+          }
+          @media screen and (max-width: 768px) {
+            grid-template-columns: repeat(3, 1fr);
+          }
+          @media screen and (max-width: 400px) {
+            grid-template-columns: repeat(2, 1fr);
+          }
         }
       }
     }
