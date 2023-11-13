@@ -3,10 +3,22 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center; }
+  @media screen and (max-width: 991px) {
+    .choose-block {
+      align-items: normal; } }
+  @media screen and (max-width: 768px) {
+    .choose-block {
+      grid-template-columns: 1fr; } }
   .choose-block .image {
     aspect-ratio: 1/0.5; }
     .choose-block .image img {
       object-fit: cover; }
+    @media screen and (max-width: 991px) {
+      .choose-block .image {
+        aspect-ratio: initial; } }
+    @media screen and (max-width: 768px) {
+      .choose-block .image {
+        aspect-ratio: 1/0.5; } }
   .choose-block .details {
     padding: 30px 20px;
     color: white; }
@@ -14,5 +26,19 @@
       font-size: 1.5rem;
       font-family: "Metal Mania", sans-serif;
       margin-bottom: 25px; }
+      @media screen and (max-width: 991px) {
+        .choose-block .details .head {
+          margin-bottom: 0; } }
+    @media screen and (max-width: 991px) {
+      .choose-block .details {
+        display: grid;
+        align-content: center;
+        gap: 15px; } }
+    @media screen and (max-width: 500px) {
+      .choose-block .details {
+        padding: 10px;
+        gap: 5px; }
+        .choose-block .details .content {
+          font-size: 0.9rem; } }
 
 /*# sourceMappingURL=ChooseBlock.css.map */

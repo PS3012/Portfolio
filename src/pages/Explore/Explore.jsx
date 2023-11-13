@@ -78,7 +78,7 @@ function Explore() {
 
                 <div id="futuristic">
                     <div className="video-bg">
-                        <video muted autoPlay loop className="w-100 h-100">
+                        <video muted autoPlay loop className={(window.innerWidth > 576) ? "w-100 h-100" : ""}>
                             <source src="/explore/future.mp4" />
                         </video>
                     </div>

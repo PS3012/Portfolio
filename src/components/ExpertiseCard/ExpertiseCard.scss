@@ -7,6 +7,10 @@
 .image-content {
   position: relative;
   margin-bottom: 40px;
+  @media screen and (max-width: 991px) {
+    display: grid;
+    box-shadow: 0px 0px 10px 10px #0a0909, 0px 0px 10px 10px #1a1919;
+  }
   .content {
     position: absolute;
     width: 60%;
@@ -15,24 +19,53 @@
     transform: translate(0, -50%);
     padding: 20px;
     background: unquote($backgroundBg + "91");
+    @media screen and (max-width: 991px) {
+      position: static;
+      transform: translate(0, 0);
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: transparent;
+      order: 2;
+    }
+    @media screen and (max-width: 576px) {
+      padding: 10px;
+    }
     .head {
       font-family: $themeFont3;
       font-size: 2rem;
       color: $themeColor;
+      @media screen and (max-width:768px) {
+        font-size: 1.6rem;
+      }
+      @media screen and (max-width:576px) {
+        font-size: 1.3rem;
+      }
     }
     .text {
       font-family: $themeFont2;
       font-size: 1.3rem;
       color: $white;
       letter-spacing: 1px;
+      @media screen and (max-width:768px) {
+        font-size: 1.1rem;
+      }
+      @media screen and (max-width:576px) {
+        font-size: 1rem;
+      }
     }
   }
   .image {
     width: 60%;
     margin-left: auto;
     aspect-ratio: 1/0.7;
+    @media screen and (max-width: 991px) {
+      width: 100%;
+      margin: 0;
+      order: 1;
+    }
   }
-  &:nth-child(2n+1) {
+  &:nth-child(2n + 1) {
     .content {
       left: initial;
       right: 0;
@@ -40,6 +73,9 @@
     .image {
       margin-right: auto;
       margin-left: 0;
+      @media screen and (max-width: 991px) {
+        margin: 0;
+      }
     }
   }
   &:nth-last-child(1) {

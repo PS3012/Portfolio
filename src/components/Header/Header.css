@@ -178,7 +178,7 @@ header {
           width: 0%; }
           @media screen and (max-width: 768px) {
             header .inner-grid .link-block a::after {
-              transform: translate(-50%, 0px); } }
+              display: none; } }
         header .inner-grid .link-block a.active::after {
           width: 50%; }
         @media screen and (max-width: 768px) {

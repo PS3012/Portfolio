@@ -1,15 +1,15 @@
 import { useState } from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faNfcDirectional } from '@fortawesome/free-brands-svg-icons';
+import { Link } from 'react-router-dom';
 import BreadCrumb from '../../components/BreadCrumb/BreadCrumb'
 import ResumeCard from '../../components/ResumeCard/ResumeCard';
 import { education, experience, technologies } from '../../components/Objects';
 import TechnologyCard from '../../components/TechnologyCard/TechnologyCard';
-import './About.css'
 import TextWriting from '../../components/TextAnimation/TextWriting';
 import CurvedText from '../../components/TextAnimation/CurvedText';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faNfcDirectional } from '@fortawesome/free-brands-svg-icons';
-import { Link } from 'react-router-dom';
 import ContactForm from '../../components/ContactForm/ContactForm';
+import './About.css'
 
 function About() {
     const [tab, setTab] = useState('education');
@@ -83,13 +83,13 @@ function About() {
                             <div className="section-content">
                                 <div className="resume-tabs">
                                     <div className="tab-btn">
-                                        <button onClick={() => setTab('education')} className={tab === 'education' && "active"}>
+                                        <button onClick={() => setTab('education')} className={(tab === 'education') ? "active" : ""}>
                                             Education
                                         </button>
-                                        <button onClick={() => setTab('skill')} className={tab === 'skill' && "active"}>
+                                        <button onClick={() => setTab('skill')} className={(tab === 'skill') ? "active" : ""}>
                                             Skills
                                         </button>
-                                        <button onClick={() => setTab('experience')} className={tab === 'experience' && "active"}>
+                                        <button onClick={() => setTab('experience')} className={(tab === 'experience') ? "active" : ""}>
                                             Experience
                                         </button>
                                     </div>

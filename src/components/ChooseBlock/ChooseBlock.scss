@@ -8,10 +8,22 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
+    @media screen and (max-width: 991px) {
+        align-items: normal;
+    }
+    @media screen and (max-width: 768px) {
+        grid-template-columns: 1fr;
+    }
     .image {
         aspect-ratio: 1/0.5;
         img {
             object-fit: cover;
+        }
+        @media screen and (max-width: 991px) {
+            aspect-ratio: initial;
+        }
+        @media screen and (max-width: 768px) {
+            aspect-ratio: 1/0.5;
         }
     }
     .details {
@@ -21,6 +33,21 @@
             font-size: 1.5rem;
             font-family: $themeFont5;
             margin-bottom: 25px;
+            @media screen and (max-width: 991px) {
+                margin-bottom: 0;
+            }
+        }
+        @media screen and (max-width: 991px) {
+            display: grid;
+            align-content: center;
+            gap: 15px;
+        }
+        @media screen and (max-width: 500px) {
+            padding: 10px;
+            gap: 5px;
+            .content {
+                font-size: 0.9rem;
+            }
         }
     }
 }

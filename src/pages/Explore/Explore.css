@@ -22,21 +22,73 @@
       margin-bottom: 40px; }
       #explore-page #main-section .top-text .image {
         width: 250px; }
+        @media screen and (max-width: 991px) {
+          #explore-page #main-section .top-text .image {
+            display: none; } }
+      @media screen and (max-width: 991px) {
+        #explore-page #main-section .top-text {
+          font-size: 6rem;
+          display: block; } }
+      @media screen and (max-width: 768px) {
+        #explore-page #main-section .top-text {
+          font-size: 5rem;
+          text-align: center;
+          margin-bottom: 0; } }
+      @media screen and (max-width: 576px) {
+        #explore-page #main-section .top-text {
+          font-size: 4rem; } }
+      @media screen and (max-width: 450px) {
+        #explore-page #main-section .top-text {
+          font-size: 3rem; } }
     #explore-page #main-section .mid-text {
       display: grid;
       grid-template-columns: 1.5fr 1fr 1.5fr;
       gap: 30px;
       height: 180px; }
+      @media screen and (max-width: 1200px) {
+        #explore-page #main-section .mid-text {
+          grid-template-columns: 2fr 1fr;
+          height: initial;
+          position: relative; } }
+      @media screen and (max-width: 768px) {
+        #explore-page #main-section .mid-text {
+          grid-template-columns: 1fr;
+          text-align: center; }
+          #explore-page #main-section .mid-text .image {
+            display: none; } }
       #explore-page #main-section .mid-text .title {
         color: #ffffff;
         letter-spacing: 10px;
         font-size: 7rem;
         text-transform: uppercase; }
+        @media screen and (max-width: 1200px) {
+          #explore-page #main-section .mid-text .title {
+            font-size: 6rem;
+            line-height: 1; } }
+        @media screen and (max-width: 576px) {
+          #explore-page #main-section .mid-text .title {
+            font-size: 4.5rem; } }
+        @media screen and (max-width: 450px) {
+          #explore-page #main-section .mid-text .title {
+            font-size: 3.5rem; } }
       #explore-page #main-section .mid-text .content {
         font-family: "Caveat", cursive;
         color: #ffffff;
         font-size: 1.2rem;
         letter-spacing: 1px; }
+        @media screen and (max-width: 1200px) {
+          #explore-page #main-section .mid-text .content {
+            position: absolute;
+            bottom: 130px;
+            left: 0;
+            width: 64%; } }
+        @media screen and (max-width: 991px) {
+          #explore-page #main-section .mid-text .content {
+            position: static;
+            width: 150%; } }
+        @media screen and (max-width: 768px) {
+          #explore-page #main-section .mid-text .content {
+            width: 100%; } }
     #explore-page #main-section .bottom-text {
       color: #ffffff;
       font-weight: bold;
@@ -44,6 +96,16 @@
       text-transform: uppercase;
       text-align: center;
       position: relative; }
+      @media screen and (max-width: 991px) {
+        #explore-page #main-section .bottom-text {
+          font-size: 6rem; } }
+      @media screen and (max-width: 768px) {
+        #explore-page #main-section .bottom-text {
+          font-size: 4rem;
+          margin-bottom: 120px; } }
+      @media screen and (max-width: 450px) {
+        #explore-page #main-section .bottom-text {
+          font-size: 3rem; } }
       #explore-page #main-section .bottom-text .curve-text {
         position: absolute;
         left: 0;
@@ -53,6 +115,19 @@
         text-align: initial;
         cursor: crosshair;
         display: block; }
+        @media screen and (max-width: 1200px) {
+          #explore-page #main-section .bottom-text .curve-text {
+            top: 0;
+            transform: translate(0, -90%); } }
+        @media screen and (max-width: 991px) {
+          #explore-page #main-section .bottom-text .curve-text {
+            top: -100%;
+            transform: translate(0, -70%); } }
+        @media screen and (max-width: 768px) {
+          #explore-page #main-section .bottom-text .curve-text {
+            top: 100%;
+            left: 50%;
+            transform: translate(-50%, 0); } }
   #explore-page #my-works {
     border-bottom: 1px solid #ffffff45; }
     #explore-page #my-works .inner-container {
@@ -93,6 +168,9 @@
       grid-template-columns: 1fr 1fr;
       gap: 30px;
       margin-bottom: 30px; }
+      @media screen and (max-width: 991px) {
+        #explore-page #my-works .work-grid {
+          grid-template-columns: 1fr; } }
     #explore-page #my-works .btn-area {
       display: flex;
       justify-content: center;
@@ -136,6 +214,14 @@
               font-size: 1.3rem; } }
     #explore-page #futuristic .video-bg {
       margin-bottom: -5px; }
+      @media screen and (max-width: 768px) {
+        #explore-page #futuristic .video-bg {
+          aspect-ratio: 1/0.6; }
+          #explore-page #futuristic .video-bg video {
+            object-fit: cover; } }
+      @media screen and (max-width: 576px) {
+        #explore-page #futuristic .video-bg {
+          display: none; } }
     #explore-page #futuristic .content-container {
       position: absolute;
       width: 100%;
@@ -158,11 +244,24 @@
           margin-bottom: 10px; }
           #explore-page #futuristic .content-container .content-box .head span {
             color: #ff0000; }
+          @media screen and (max-width: 991px) {
+            #explore-page #futuristic .content-container .content-box .head {
+              font-size: 2rem; } }
+          @media screen and (max-width: 576px) {
+            #explore-page #futuristic .content-container .content-box .head {
+              font-size: 1.4rem; } }
         #explore-page #futuristic .content-container .content-box .details {
           color: white;
           font-family: "Caveat", cursive;
           letter-spacing: 2px;
           font-size: 1.2rem; }
+          @media screen and (max-width: 576px) {
+            #explore-page #futuristic .content-container .content-box .details {
+              font-size: 1rem; } }
+      @media screen and (max-width: 576px) {
+        #explore-page #futuristic .content-container {
+          position: static;
+          padding: 30px 10px; } }
   #explore-page #technologies {
     border-bottom: 1px solid #ffffff45; }
     #explore-page #technologies .inner-container {
@@ -200,7 +299,7 @@
               font-size: 1.3rem; } }
     #explore-page #technologies .tech-grid {
       display: grid;
-      grid-template-columns: repeat(9, 1fr);
+      grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
       gap: 20px; }
   #explore-page #why-choose {
     border-bottom: 1px solid #ffffff45; }
