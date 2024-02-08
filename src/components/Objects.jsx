@@ -161,19 +161,16 @@ export const education = [
         id: 1,
         title: "10th | The Woods Heritage School, Jhansi",
         time: "April, 2016 - March, 2017",
-        text: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo, at ea eligendi explicabo maxime ipsa fugit non? Non, vel, molestias odio quis dicta alias quidem, corrupti fugit officia rerum vero!",
     },
     {
         id: 2,
         title: "12th | The Woods Heritage School, Jhansi",
         time: "April, 2018 - March, 2019",
-        text: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo, at ea eligendi explicabo maxime ipsa fugit non? Non, vel, molestias odio quis dicta alias quidem, corrupti fugit officia rerum vero!",
     },
     {
         id: 3,
         title: "Bachelor of Computer Applications | CSAIST, Jhansi",
         time: "September, 2019 - July, 2022",
-        text: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo, at ea eligendi explicabo maxime ipsa fugit non? Non, vel, molestias odio quis dicta alias quidem, corrupti fugit officia rerum vero!",
     },
 ]
 
@@ -181,21 +178,9 @@ export const experience = [
     {
         id: 1,
         title: "Act T Connect | Jhansi",
-        time: "September, 2022 - February, 2023",
-        text: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo, at ea eligendi explicabo maxime ipsa fugit non? Non, vel, molestias odio quis dicta alias quidem, corrupti fugit officia rerum vero!",
-    },
-    {
-        id: 2,
-        title: "Venturing Digitally | Bhopal",
-        time: "February, 2023 - September, 2023",
-        text: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo, at ea eligendi explicabo maxime ipsa fugit non? Non, vel, molestias odio quis dicta alias quidem, corrupti fugit officia rerum vero!",
-    },
-    {
-        id: 3,
-        title: "Qssence | Pune",
-        time: "November, 2023 - Present",
-        text: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo, at ea eligendi explicabo maxime ipsa fugit non? Non, vel, molestias odio quis dicta alias quidem, corrupti fugit officia rerum vero!",
-    },
+        time: "November, 2022 - August, 2023",
+        text: "Specialized in React.js and TypeScript to develop engaging web applications. Created visually appealing, responsive designs using Bootstrap and SASS/SCSS. Managed version control through Git/GitHub, translating design concepts into user-friendly interfaces.",
+    }
 ]
 
 export const myDetails = [

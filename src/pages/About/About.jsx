@@ -32,7 +32,7 @@ function About() {
                                             <TextWriting words={words} />
                                         </div>
                                         <div className="content">
-                                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. At, fugiat, modi eius aspernatur dicta quidem corrupti quas incidunt magnam sequi sunt ab. Ipsam ratione assumenda, voluptatibus deleniti eligendi eveniet quidem ut sed! Quia explicabo reprehenderit commodi, adipisci optio, perspiciatis nulla ratione non, pariatur iure quasi. Quo nesciunt corrupti enim in!
+                                        Experienced Front-End Web Developer with a comprehensive skill set encompassing HTML, CSS, JavaScript, SASS/SCSS, Bootstrap, TypeScript, Git, GitHub, React.js, and documentation. Proven track record of successful project execution, showcasing proficiency in networking and delivering high-quality, scalable solutions.
                                         </div>
                                         <div className="redirect">
                                             <Link to="/contact">

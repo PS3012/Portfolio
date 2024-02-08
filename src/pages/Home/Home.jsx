@@ -21,7 +21,7 @@ function Home() {
                                     Elevating <span>Digital</span> Presence with <span>Innovative</span> Design and <span>Flawless Development</span> Solutions.
                                 </div>
                                 <div className="btn-bar">
-                                    <a href="/Piyush_Sahu_Resume.pdf" download className="action-btn"><FontAwesomeIcon icon={faDownload} />&nbsp; My Resume</a>
+                                    <a href="/Piyush-Sahu-Resume.pdf" download className="action-btn"><FontAwesomeIcon icon={faDownload} />&nbsp; My Resume</a>
                                     <Link to="/explore" className="action-btn"><FontAwesomeIcon icon={faWpexplorer} />&nbsp; Explore</Link>
                                 </div>
                             </div>
