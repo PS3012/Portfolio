@@ -177,10 +177,22 @@ export const education = [
 export const experience = [
     {
         id: 1,
-        title: "Act T Connect | Jhansi",
-        time: "November, 2022 - August, 2023",
+        title: "Act T Connect Pvt. Ltd. | Jhansi",
+        time: "September, 2022 - January, 2023",
         text: "Specialized in React.js and TypeScript to develop engaging web applications. Created visually appealing, responsive designs using Bootstrap and SASS/SCSS. Managed version control through Git/GitHub, translating design concepts into user-friendly interfaces.",
-    }
+    },
+    {
+        id: 2,
+        title: "Venturing Digitally Pvt. Ltd. | Bhopal",
+        time: "February, 2023 - September, 2023",
+        text: "Specialized in React.js and TypeScript to develop engaging web applications. Created visually appealing, responsive designs using Bootstrap and SASS/SCSS. Managed version control through Git/GitHub, translating design concepts into user-friendly interfaces.",
+    },
+    {
+        id: 3,
+        title: "Qssence Techvantage",
+        time: "November, 2023 - January, 2024",
+        text: "Specialized in React.js and TypeScript to develop engaging web applications. Created visually appealing, responsive designs using Bootstrap and SASS/SCSS. Managed version control through Git/GitHub, translating design concepts into user-friendly interfaces.",
+    },
 ]
 
 export const myDetails = [
