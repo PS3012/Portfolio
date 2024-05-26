@@ -5,27 +5,32 @@
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 100; }
-  #custom-loader .loader-bg {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    height: 100vh; }
-    #custom-loader .loader-bg div {
-      width: 100%;
-      height: 100vh;
-      background: #101010;
-      border-right: 1px solid #ffffff2e;
-      animation: 2s ease-in forwards bgStrip; }
+  z-index: 100;
+}
+#custom-loader .loader-bg {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  height: 100vh;
+}
+#custom-loader .loader-bg div {
+  width: 100%;
+  height: 100vh;
+  background: #101010;
+  border-right: 1px solid #ffffff2e;
+  animation: 2s ease-in forwards bgStrip;
+}
 
 @keyframes bgStrip {
   0% {
     width: 100%;
-    height: 100vh; }
+    height: 100vh;
+  }
   70% {
     width: 1px;
-    height: 100vh; }
+    height: 100vh;
+  }
   100% {
     width: 1px;
-    height: 0; } }
-
-/*# sourceMappingURL=CustomLoader.css.map */
+    height: 0;
+  }
+}/*# sourceMappingURL=CustomLoader.css.map */

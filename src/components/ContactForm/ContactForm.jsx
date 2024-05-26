@@ -8,6 +8,10 @@ function ContactForm() {
     init("vdsZYw09DIeG_2xbfQza5");
     const form = useRef();
 
+    const handleReset = () => {
+        form.current.reset()
+    }
+
     const handleSubmit = (e) => {
         e.preventDefault();
         emailjs.sendForm("service_roq31ep", "template_k7mfkso", form.current, "uxlDe88Gsnw3GmG2H").then(
@@ -19,6 +23,7 @@ function ContactForm() {
                 console.log(error.text);
             }
         );
+        handleReset()
     };
     return (
         <>
@@ -35,7 +40,7 @@ function ContactForm() {
                         <div className="section-content">
                             <div className="inner-grid">
                                 <div className="form-block">
-                                    <form onSubmit={handleSubmit} ref={form}>
+                                    <form ref={form} onSubmit={handleSubmit}>
                                         <div className="group-input">
                                             <label htmlFor="name">Name</label>
                                             <input type="text" name="name" required />
@@ -53,10 +58,10 @@ function ContactForm() {
                                             <textarea name="message" required></textarea>
                                         </div>
                                         <div className="btn-block">
-                                            <button className="box-button">
+                                            <button type='button' className="box-button" onClick={handleReset}>
                                                 <span>Reset</span>
                                             </button>
-                                            <button className="box-button">
+                                            <button type='submit' className="box-button">
                                                 <span>Send Message</span>
                                             </button>
                                         </div>

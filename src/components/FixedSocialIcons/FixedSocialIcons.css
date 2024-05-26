@@ -6,24 +6,29 @@
   z-index: 10;
   display: grid;
   gap: 10px;
-  justify-items: center; }
+  justify-items: center;
+}
+#fixed-social .text {
+  color: white;
+  font-weight: bold;
+  font-size: 0.85rem;
+  font-family: "Mate SC", serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  writing-mode: vertical-lr;
+}
+@media screen and (max-width: 768px) {
   #fixed-social .text {
-    color: white;
-    font-weight: bold;
-    font-size: 0.85rem;
-    font-family: "Mate SC", serif;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    writing-mode: vertical-lr; }
-    @media screen and (max-width: 768px) {
-      #fixed-social .text {
-        display: none; } }
+    display: none;
+  }
+}
+#fixed-social .line {
+  background: white;
+  width: 2px;
+  height: 70px;
+}
+@media screen and (max-width: 768px) {
   #fixed-social .line {
-    background: white;
-    width: 2px;
-    height: 70px; }
-    @media screen and (max-width: 768px) {
-      #fixed-social .line {
-        display: none; } }
-
-/*# sourceMappingURL=FixedSocialIcons.css.map */
+    display: none;
+  }
+}/*# sourceMappingURL=FixedSocialIcons.css.map */

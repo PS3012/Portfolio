@@ -1,83 +1,110 @@
 @import url("https://fonts.googleapis.com/css2?family=Arsenal&family=Caveat&family=Mate+SC&family=Metal+Mania&family=Nosifer&display=swap");
 .resume-card {
   padding: 0 0 20px 40px;
-  position: relative; }
-  .resume-card:nth-last-child(1) {
-    padding-bottom: 0; }
-  @media screen and (max-width: 768px) {
-    .resume-card {
-      padding: 0 0 20px 30px; } }
-  @media screen and (max-width: 768px) {
-    .resume-card {
-      padding: 0 0 20px 20px; } }
+  position: relative;
+}
+.resume-card:nth-last-child(1) {
+  padding-bottom: 0;
+}
+@media screen and (max-width: 768px) {
+  .resume-card {
+    padding: 0 0 20px 30px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .resume-card {
+    padding: 0 0 20px 20px;
+  }
+}
+.resume-card .horizontal-line {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  height: 100%;
+  width: 5px;
+  background: #ff0000;
+}
+@media screen and (max-width: 768px) {
   .resume-card .horizontal-line {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    height: 100%;
-    width: 5px;
-    background: #ff0000; }
-    @media screen and (max-width: 768px) {
-      .resume-card .horizontal-line {
-        width: 3px; } }
+    width: 3px;
+  }
+}
+.resume-card .vertical-line {
+  position: absolute;
+  top: 27.5px;
+  left: 12px;
+  height: 5px;
+  width: 30px;
+  background: #ff0000;
+}
+@media screen and (max-width: 768px) {
   .resume-card .vertical-line {
-    position: absolute;
-    top: 27.5px;
-    left: 12px;
-    height: 5px;
-    width: 30px;
-    background: #ff0000; }
-    @media screen and (max-width: 768px) {
-      .resume-card .vertical-line {
-        width: 20px;
-        height: 3px; } }
-    @media screen and (max-width: 576px) {
-      .resume-card .vertical-line {
-        width: 10px; } }
-  .resume-card .disc {
-    position: absolute;
-    top: 20px;
-    left: 0;
     width: 20px;
-    height: 20px;
-    background: #101010;
-    border-radius: 50%;
-    z-index: 1;
-    border: 5px solid #ff0000;
-    transform: translate(-8px, 0); }
-    @media screen and (max-width: 768px) {
-      .resume-card .disc {
-        border-width: 3px; } }
-  .resume-card .main-card {
-    box-shadow: 5px 5px 10px #0c0c0c, -5px -5px 10px #141414;
-    background: black;
-    border-radius: 5px;
-    padding: 20px; }
-    .resume-card .main-card .title {
-      color: #ffffff;
-      font-family: "Merriweather Sans", sans-serif;
-      font-size: 1.4rem; }
-      @media screen and (max-width: 768px) {
-        .resume-card .main-card .title {
-          font-size: 1.2rem; } }
-      @media screen and (max-width: 576px) {
-        .resume-card .main-card .title {
-          font-size: 1rem; } }
-    .resume-card .main-card .time {
-      color: #ff0000;
-      font-family: "Mate SC", serif;
-      font-weight: bold;
-      letter-spacing: 1px;
-      margin-bottom: 20px; }
-      @media screen and (max-width: 576px) {
-        .resume-card .main-card .time {
-          font-size: 0.8rem; } }
-    .resume-card .main-card .content {
-      font-family: "Merriweather Sans", sans-serif;
-      color: #ffffff; }
-      @media screen and (max-width: 576px) {
-        .resume-card .main-card .content {
-          font-size: 0.8rem; } }
-
-/*# sourceMappingURL=ResumeCard.css.map */
+    height: 3px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .resume-card .vertical-line {
+    width: 10px;
+  }
+}
+.resume-card .disc {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background: #101010;
+  border-radius: 50%;
+  z-index: 1;
+  border: 5px solid #ff0000;
+  transform: translate(-8px, 0);
+}
+@media screen and (max-width: 768px) {
+  .resume-card .disc {
+    border-width: 3px;
+  }
+}
+.resume-card .main-card {
+  box-shadow: 5px 5px 10px #0c0c0c, -5px -5px 10px #141414;
+  background: black;
+  border-radius: 5px;
+  padding: 20px;
+}
+.resume-card .main-card .title {
+  color: #ffffff;
+  font-family: "Mate SC", serif;
+  font-size: 1.4rem;
+}
+@media screen and (max-width: 768px) {
+  .resume-card .main-card .title {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 576px) {
+  .resume-card .main-card .title {
+    font-size: 1rem;
+  }
+}
+.resume-card .main-card .time {
+  color: #ff0000;
+  font-family: "Mate SC", serif;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 576px) {
+  .resume-card .main-card .time {
+    font-size: 0.8rem;
+  }
+}
+.resume-card .main-card .content {
+  font-family: "Merriweather Sans", sans-serif;
+  color: #ffffff;
+}
+@media screen and (max-width: 576px) {
+  .resume-card .main-card .content {
+    font-size: 0.8rem;
+  }
+}/*# sourceMappingURL=ResumeCard.css.map */

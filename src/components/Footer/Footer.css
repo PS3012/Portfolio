@@ -1,78 +1,105 @@
 @import url("https://fonts.googleapis.com/css2?family=Arsenal&family=Caveat&family=Mate+SC&family=Metal+Mania&family=Nosifer&display=swap");
 footer {
-  border-bottom: 1px solid #ffffff45;
-  background: #101010; }
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2705882353);
+  background: #101010;
+}
+footer .inner-container {
+  border-center: 0px solid rgba(255, 255, 255, 0.2705882353);
+  padding: 50px 0;
+}
+@media screen and (max-width: 768px) {
   footer .inner-container {
-    border-center: 0px solid #ffffff45;
-    padding: 50px 0; }
-    @media screen and (max-width: 768px) {
-      footer .inner-container {
-        padding: 40px 0;
-        border: 0; } }
-    footer .inner-container .section-head {
-      margin-bottom: 50px; }
-      @media screen and (max-width: 991px) {
-        footer .inner-container .section-head {
-          margin-bottom: 40px; } }
-      @media screen and (max-width: 768px) {
-        footer .inner-container .section-head {
-          margin-bottom: 30px; } }
-      footer .inner-container .section-head .main-head {
-        font-size: 3rem;
-        color: #ffffff;
-        text-align: center;
-        font-family: "Nosifer", sans-serif;
-        letter-spacing: 2px; }
-        footer .inner-container .section-head .main-head span {
-          color: #ff0000; }
-        @media screen and (max-width: 991px) {
-          footer .inner-container .section-head .main-head {
-            font-size: 2rem; } }
-        @media screen and (max-width: 768px) {
-          footer .inner-container .section-head .main-head {
-            font-size: 1.6rem;
-            text-align: center; } }
-        @media screen and (max-width: 576px) {
-          footer .inner-container .section-head .main-head {
-            font-size: 1.3rem; } }
-  footer .inner-container {
-    padding-bottom: 10px; }
-    footer .inner-container .section-head {
-      margin-bottom: 10px; }
-  footer .links {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-items: center;
-    margin-bottom: 30px; }
-    @media screen and (max-width: 576px) {
-      footer .links {
-        gap: 15px 0px; } }
-    footer .links a {
-      padding: 2px 15px;
-      color: #ff0000;
-      border-right: 1px solid #ffffff;
-      font-family: "Mate SC", serif;
-      text-transform: uppercase;
-      font-size: 0.9rem;
-      letter-spacing: 1px;
-      font-weight: bold; }
-      footer .links a:nth-last-child(1) {
-        border-right: 0px; }
-      footer .links a:hover {
-        color: #ffffff; }
-      @media screen and (max-width: 576px) {
-        footer .links a {
-          width: 33%;
-          text-align: center;
-          padding: 2px 12px; }
-          footer .links a:nth-child(3n) {
-            border-right: 0px; } }
-  footer .copyright {
+    padding: 40px 0;
+    border: 0;
+  }
+}
+footer .inner-container .section-head {
+  margin-bottom: 50px;
+}
+@media screen and (max-width: 991px) {
+  footer .inner-container .section-head {
+    margin-bottom: 40px;
+  }
+}
+@media screen and (max-width: 768px) {
+  footer .inner-container .section-head {
+    margin-bottom: 30px;
+  }
+}
+footer .inner-container .section-head .main-head {
+  font-size: 3rem;
+  color: #ffffff;
+  text-align: center;
+  font-family: "Nosifer", sans-serif;
+  letter-spacing: 2px;
+}
+footer .inner-container .section-head .main-head span {
+  color: #ff0000;
+}
+@media screen and (max-width: 991px) {
+  footer .inner-container .section-head .main-head {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  footer .inner-container .section-head .main-head {
+    font-size: 1.6rem;
     text-align: center;
-    color: white;
-    font-size: 0.8rem;
-    padding-top: 10px;
-    border-top: 1px solid #ffffff45; }
-
-/*# sourceMappingURL=Footer.css.map */
+  }
+}
+@media screen and (max-width: 576px) {
+  footer .inner-container .section-head .main-head {
+    font-size: 1.3rem;
+  }
+}
+footer .inner-container {
+  padding-bottom: 10px;
+}
+footer .inner-container .section-head {
+  margin-bottom: 10px;
+}
+footer .links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 30px;
+}
+@media screen and (max-width: 576px) {
+  footer .links {
+    gap: 15px 0px;
+  }
+}
+footer .links a {
+  padding: 2px 15px;
+  color: #ff0000;
+  border-right: 1px solid #ffffff;
+  font-family: "Mate SC", serif;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+footer .links a:nth-last-child(1) {
+  border-right: 0px;
+}
+footer .links a:hover {
+  color: #ffffff;
+}
+@media screen and (max-width: 576px) {
+  footer .links a {
+    width: 33%;
+    text-align: center;
+    padding: 2px 12px;
+  }
+  footer .links a:nth-child(3n) {
+    border-right: 0px;
+  }
+}
+footer .copyright {
+  text-align: center;
+  color: white;
+  font-size: 0.8rem;
+  padding-top: 10px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2705882353);
+}/*# sourceMappingURL=Footer.css.map */

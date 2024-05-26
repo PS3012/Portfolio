@@ -1,213 +1,305 @@
 @import url("https://fonts.googleapis.com/css2?family=Arsenal&family=Caveat&family=Mate+SC&family=Metal+Mania&family=Nosifer&display=swap");
 #about-page {
   background: #101010;
-  padding-top: 120px; }
-  @media screen and (max-width: 768px) {
-    #about-page {
-      padding-top: 100px; } }
-  #about-page #about-me {
-    border-bottom: 1px solid #ffffff45; }
-    #about-page #about-me .inner-container {
-      border-left: 1px solid #ffffff45;
-      padding: 50px 0 50px 30px; }
-      @media screen and (max-width: 768px) {
-        #about-page #about-me .inner-container {
-          padding: 40px 0;
-          border: 0; } }
-      #about-page #about-me .inner-container .section-head {
-        margin-bottom: 50px; }
-        @media screen and (max-width: 991px) {
-          #about-page #about-me .inner-container .section-head {
-            margin-bottom: 40px; } }
-        @media screen and (max-width: 768px) {
-          #about-page #about-me .inner-container .section-head {
-            margin-bottom: 30px; } }
-        #about-page #about-me .inner-container .section-head .main-head {
-          font-size: 3rem;
-          color: #ffffff;
-          text-align: left;
-          font-family: "Nosifer", sans-serif;
-          letter-spacing: 2px; }
-          #about-page #about-me .inner-container .section-head .main-head span {
-            color: #ff0000; }
-          @media screen and (max-width: 991px) {
-            #about-page #about-me .inner-container .section-head .main-head {
-              font-size: 2rem; } }
-          @media screen and (max-width: 768px) {
-            #about-page #about-me .inner-container .section-head .main-head {
-              font-size: 1.6rem;
-              text-align: center; } }
-          @media screen and (max-width: 576px) {
-            #about-page #about-me .inner-container .section-head .main-head {
-              font-size: 1.3rem; } }
-    #about-page #about-me .inner-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 30px; }
-      @media screen and (max-width: 1200px) {
-        #about-page #about-me .inner-grid {
-          grid-template-columns: 1fr; } }
-      #about-page #about-me .inner-grid .content-block .head {
-        color: #ff0000;
-        font-size: 3rem;
-        font-family: "Mate SC", serif;
-        margin-bottom: 20px;
-        font-weight: bold; }
-        #about-page #about-me .inner-grid .content-block .head span {
-          color: #ffffff; }
-        @media screen and (max-width: 991px) {
-          #about-page #about-me .inner-grid .content-block .head {
-            font-size: 2.5rem; } }
-        @media screen and (max-width: 768px) {
-          #about-page #about-me .inner-grid .content-block .head {
-            font-size: 2.2rem; } }
-        @media screen and (max-width: 576px) {
-          #about-page #about-me .inner-grid .content-block .head {
-            font-size: 1.8rem; } }
-      #about-page #about-me .inner-grid .content-block .content {
-        color: #ffffff;
-        font-family: "Merriweather Sans", sans-serif;
-        margin-bottom: 10px; }
-        @media screen and (max-width: 576px) {
-          #about-page #about-me .inner-grid .content-block .content {
-            font-size: 0.9rem; } }
-      #about-page #about-me .inner-grid .content-block .redirect {
-        display: flex;
-        gap: 20px; }
-        #about-page #about-me .inner-grid .content-block .redirect a {
-          cursor: crosshair; }
-      #about-page #about-me .inner-grid .image {
-        box-shadow: #ffffff36 0px 0px 3px; }
-  #about-page #more-about-me {
-    border-bottom: 1px solid #ffffff45; }
-    #about-page #more-about-me .inner-container {
-      border-center: 0px solid #ffffff45;
-      padding: 50px 0; }
-      @media screen and (max-width: 768px) {
-        #about-page #more-about-me .inner-container {
-          padding: 40px 0;
-          border: 0; } }
-      #about-page #more-about-me .inner-container .section-head {
-        margin-bottom: 50px; }
-        @media screen and (max-width: 991px) {
-          #about-page #more-about-me .inner-container .section-head {
-            margin-bottom: 40px; } }
-        @media screen and (max-width: 768px) {
-          #about-page #more-about-me .inner-container .section-head {
-            margin-bottom: 30px; } }
-        #about-page #more-about-me .inner-container .section-head .main-head {
-          font-size: 3rem;
-          color: #ffffff;
-          text-align: center;
-          font-family: "Nosifer", sans-serif;
-          letter-spacing: 2px; }
-          #about-page #more-about-me .inner-container .section-head .main-head span {
-            color: #ff0000; }
-          @media screen and (max-width: 991px) {
-            #about-page #more-about-me .inner-container .section-head .main-head {
-              font-size: 2rem; } }
-          @media screen and (max-width: 768px) {
-            #about-page #more-about-me .inner-container .section-head .main-head {
-              font-size: 1.6rem;
-              text-align: center; } }
-          @media screen and (max-width: 576px) {
-            #about-page #more-about-me .inner-container .section-head .main-head {
-              font-size: 1.3rem; } }
-    #about-page #more-about-me .content {
-      color: #ffffff;
-      text-align: center;
-      font-family: "Mate SC", serif;
-      margin-bottom: 20px; }
-      @media screen and (max-width: 768px) {
-        #about-page #more-about-me .content {
-          font-size: 0.9rem; } }
-    #about-page #more-about-me .btn-block {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 20px; }
-  #about-page #my-resume {
-    border-bottom: 1px solid #ffffff45; }
-    #about-page #my-resume .inner-container {
-      border-right: 1px solid #ffffff45;
-      padding: 50px 30px 50px 0; }
-      @media screen and (max-width: 768px) {
-        #about-page #my-resume .inner-container {
-          padding: 40px 0;
-          border: 0; } }
-      #about-page #my-resume .inner-container .section-head {
-        margin-bottom: 50px; }
-        @media screen and (max-width: 991px) {
-          #about-page #my-resume .inner-container .section-head {
-            margin-bottom: 40px; } }
-        @media screen and (max-width: 768px) {
-          #about-page #my-resume .inner-container .section-head {
-            margin-bottom: 30px; } }
-        #about-page #my-resume .inner-container .section-head .main-head {
-          font-size: 3rem;
-          color: #ffffff;
-          text-align: right;
-          font-family: "Nosifer", sans-serif;
-          letter-spacing: 2px; }
-          #about-page #my-resume .inner-container .section-head .main-head span {
-            color: #ff0000; }
-          @media screen and (max-width: 991px) {
-            #about-page #my-resume .inner-container .section-head .main-head {
-              font-size: 2rem; } }
-          @media screen and (max-width: 768px) {
-            #about-page #my-resume .inner-container .section-head .main-head {
-              font-size: 1.6rem;
-              text-align: center; } }
-          @media screen and (max-width: 576px) {
-            #about-page #my-resume .inner-container .section-head .main-head {
-              font-size: 1.3rem; } }
-    #about-page #my-resume .resume-tabs .tab-btn {
-      box-shadow: 5px 5px 10px #0c0c0c, -5px -5px 10px #141414;
-      background: black;
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 10px;
-      padding: 10px;
-      border-radius: 5px;
-      margin-bottom: 30px; }
-      #about-page #my-resume .resume-tabs .tab-btn button {
-        padding: 15px 20px;
-        color: #ffffff;
-        border-radius: 5px;
-        font-family: "Mate SC", serif;
-        font-size: 1.5rem;
-        border: 2px solid transparent; }
-        @media screen and (max-width: 991px) {
-          #about-page #my-resume .resume-tabs .tab-btn button {
-            font-size: 1.3rem; } }
-        @media screen and (max-width: 768px) {
-          #about-page #my-resume .resume-tabs .tab-btn button {
-            font-size: 1.1rem;
-            padding: 12px 15px; } }
-        @media screen and (max-width: 576px) {
-          #about-page #my-resume .resume-tabs .tab-btn button {
-            font-size: 1rem;
-            padding: 8px 10px; } }
-        #about-page #my-resume .resume-tabs .tab-btn button:hover {
-          color: #ff0000; }
-        #about-page #my-resume .resume-tabs .tab-btn button.active {
-          background: #101010;
-          border-color: #ff0000; }
-    #about-page #my-resume .resume-tabs .tab-content .skill-grid {
-      display: grid;
-      grid-template-columns: repeat(6, 1fr);
-      gap: 30px; }
-      @media screen and (max-width: 1200px) {
-        #about-page #my-resume .resume-tabs .tab-content .skill-grid {
-          grid-template-columns: repeat(5, 1fr); } }
-      @media screen and (max-width: 991px) {
-        #about-page #my-resume .resume-tabs .tab-content .skill-grid {
-          grid-template-columns: repeat(4, 1fr); } }
-      @media screen and (max-width: 768px) {
-        #about-page #my-resume .resume-tabs .tab-content .skill-grid {
-          grid-template-columns: repeat(3, 1fr); } }
-      @media screen and (max-width: 400px) {
-        #about-page #my-resume .resume-tabs .tab-content .skill-grid {
-          grid-template-columns: repeat(2, 1fr); } }
-
-/*# sourceMappingURL=About.css.map */
+  padding-top: 120px;
+}
+@media screen and (max-width: 768px) {
+  #about-page {
+    padding-top: 100px;
+  }
+}
+#about-page #about-me {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2705882353);
+}
+#about-page #about-me .inner-container {
+  border-left: 1px solid rgba(255, 255, 255, 0.2705882353);
+  padding: 50px 0 50px 30px;
+}
+@media screen and (max-width: 768px) {
+  #about-page #about-me .inner-container {
+    padding: 40px 0;
+    border: 0;
+  }
+}
+#about-page #about-me .inner-container .section-head {
+  margin-bottom: 50px;
+}
+@media screen and (max-width: 991px) {
+  #about-page #about-me .inner-container .section-head {
+    margin-bottom: 40px;
+  }
+}
+@media screen and (max-width: 768px) {
+  #about-page #about-me .inner-container .section-head {
+    margin-bottom: 30px;
+  }
+}
+#about-page #about-me .inner-container .section-head .main-head {
+  font-size: 3rem;
+  color: #ffffff;
+  text-align: left;
+  font-family: "Nosifer", sans-serif;
+  letter-spacing: 2px;
+}
+#about-page #about-me .inner-container .section-head .main-head span {
+  color: #ff0000;
+}
+@media screen and (max-width: 991px) {
+  #about-page #about-me .inner-container .section-head .main-head {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  #about-page #about-me .inner-container .section-head .main-head {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 576px) {
+  #about-page #about-me .inner-container .section-head .main-head {
+    font-size: 1.3rem;
+  }
+}
+#about-page #about-me .inner-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+@media screen and (max-width: 1200px) {
+  #about-page #about-me .inner-grid {
+    grid-template-columns: 1fr;
+  }
+}
+#about-page #about-me .inner-grid .content-block .head {
+  color: #ff0000;
+  font-size: 3rem;
+  font-family: "Mate SC", serif;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+#about-page #about-me .inner-grid .content-block .head span {
+  color: #ffffff;
+}
+@media screen and (max-width: 991px) {
+  #about-page #about-me .inner-grid .content-block .head {
+    font-size: 2.5rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  #about-page #about-me .inner-grid .content-block .head {
+    font-size: 2.2rem;
+  }
+}
+@media screen and (max-width: 576px) {
+  #about-page #about-me .inner-grid .content-block .head {
+    font-size: 1.8rem;
+  }
+}
+#about-page #about-me .inner-grid .content-block .content {
+  color: #ffffff;
+  font-family: "Merriweather Sans", sans-serif;
+  margin-bottom: 10px;
+}
+@media screen and (max-width: 576px) {
+  #about-page #about-me .inner-grid .content-block .content {
+    font-size: 0.9rem;
+  }
+}
+#about-page #about-me .inner-grid .content-block .redirect {
+  display: flex;
+  gap: 20px;
+}
+#about-page #about-me .inner-grid .content-block .redirect a {
+  cursor: crosshair;
+}
+#about-page #about-me .inner-grid .image {
+  box-shadow: rgba(255, 255, 255, 0.2117647059) 0px 0px 3px;
+}
+#about-page #more-about-me {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2705882353);
+}
+#about-page #more-about-me .inner-container {
+  border-center: 0px solid rgba(255, 255, 255, 0.2705882353);
+  padding: 50px 0;
+}
+@media screen and (max-width: 768px) {
+  #about-page #more-about-me .inner-container {
+    padding: 40px 0;
+    border: 0;
+  }
+}
+#about-page #more-about-me .inner-container .section-head {
+  margin-bottom: 50px;
+}
+@media screen and (max-width: 991px) {
+  #about-page #more-about-me .inner-container .section-head {
+    margin-bottom: 40px;
+  }
+}
+@media screen and (max-width: 768px) {
+  #about-page #more-about-me .inner-container .section-head {
+    margin-bottom: 30px;
+  }
+}
+#about-page #more-about-me .inner-container .section-head .main-head {
+  font-size: 3rem;
+  color: #ffffff;
+  text-align: center;
+  font-family: "Nosifer", sans-serif;
+  letter-spacing: 2px;
+}
+#about-page #more-about-me .inner-container .section-head .main-head span {
+  color: #ff0000;
+}
+@media screen and (max-width: 991px) {
+  #about-page #more-about-me .inner-container .section-head .main-head {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  #about-page #more-about-me .inner-container .section-head .main-head {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 576px) {
+  #about-page #more-about-me .inner-container .section-head .main-head {
+    font-size: 1.3rem;
+  }
+}
+#about-page #more-about-me .content {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Mate SC", serif;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 768px) {
+  #about-page #more-about-me .content {
+    font-size: 0.9rem;
+  }
+}
+#about-page #more-about-me .btn-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+#about-page #my-resume {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2705882353);
+}
+#about-page #my-resume .inner-container {
+  border-right: 1px solid rgba(255, 255, 255, 0.2705882353);
+  padding: 50px 30px 50px 0;
+}
+@media screen and (max-width: 768px) {
+  #about-page #my-resume .inner-container {
+    padding: 40px 0;
+    border: 0;
+  }
+}
+#about-page #my-resume .inner-container .section-head {
+  margin-bottom: 50px;
+}
+@media screen and (max-width: 991px) {
+  #about-page #my-resume .inner-container .section-head {
+    margin-bottom: 40px;
+  }
+}
+@media screen and (max-width: 768px) {
+  #about-page #my-resume .inner-container .section-head {
+    margin-bottom: 30px;
+  }
+}
+#about-page #my-resume .inner-container .section-head .main-head {
+  font-size: 3rem;
+  color: #ffffff;
+  text-align: right;
+  font-family: "Nosifer", sans-serif;
+  letter-spacing: 2px;
+}
+#about-page #my-resume .inner-container .section-head .main-head span {
+  color: #ff0000;
+}
+@media screen and (max-width: 991px) {
+  #about-page #my-resume .inner-container .section-head .main-head {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  #about-page #my-resume .inner-container .section-head .main-head {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 576px) {
+  #about-page #my-resume .inner-container .section-head .main-head {
+    font-size: 1.3rem;
+  }
+}
+#about-page #my-resume .resume-tabs .tab-btn {
+  box-shadow: 5px 5px 10px #0c0c0c, -5px -5px 10px #141414;
+  background: black;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 30px;
+}
+#about-page #my-resume .resume-tabs .tab-btn button {
+  padding: 15px 20px;
+  color: #ffffff;
+  border-radius: 5px;
+  font-family: "Mate SC", serif;
+  font-size: 1.5rem;
+  border: 2px solid transparent;
+}
+@media screen and (max-width: 991px) {
+  #about-page #my-resume .resume-tabs .tab-btn button {
+    font-size: 1.3rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  #about-page #my-resume .resume-tabs .tab-btn button {
+    font-size: 1.1rem;
+    padding: 12px 15px;
+  }
+}
+@media screen and (max-width: 576px) {
+  #about-page #my-resume .resume-tabs .tab-btn button {
+    font-size: 1rem;
+    padding: 8px 10px;
+  }
+}
+#about-page #my-resume .resume-tabs .tab-btn button:hover {
+  color: #ff0000;
+}
+#about-page #my-resume .resume-tabs .tab-btn button.active {
+  background: #101010;
+  border-color: #ff0000;
+}
+#about-page #my-resume .resume-tabs .tab-content .skill-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 30px;
+}
+@media screen and (max-width: 1200px) {
+  #about-page #my-resume .resume-tabs .tab-content .skill-grid {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+@media screen and (max-width: 991px) {
+  #about-page #my-resume .resume-tabs .tab-content .skill-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media screen and (max-width: 768px) {
+  #about-page #my-resume .resume-tabs .tab-content .skill-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (max-width: 400px) {
+  #about-page #my-resume .resume-tabs .tab-content .skill-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}/*# sourceMappingURL=About.css.map */

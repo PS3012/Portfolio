@@ -1,71 +1,95 @@
 @import url("https://fonts.googleapis.com/css2?family=Arsenal&family=Caveat&family=Mate+SC&family=Metal+Mania&family=Nosifer&display=swap");
 .image-content {
   position: relative;
-  margin-bottom: 40px; }
-  @media screen and (max-width: 991px) {
-    .image-content {
-      display: grid;
-      box-shadow: 0px 0px 10px 10px #0a0909, 0px 0px 10px 10px #1a1919; } }
+  margin-bottom: 40px;
+}
+@media screen and (max-width: 991px) {
+  .image-content {
+    display: grid;
+    box-shadow: 0px 0px 10px 10px #0a0909, 0px 0px 10px 10px #1a1919;
+  }
+}
+.image-content .content {
+  position: absolute;
+  width: 60%;
+  top: 50%;
+  left: 0;
+  transform: translate(0, -50%);
+  padding: 20px;
+  background: #10101091;
+}
+@media screen and (max-width: 991px) {
   .image-content .content {
-    position: absolute;
-    width: 60%;
-    top: 50%;
+    position: static;
+    transform: translate(0, 0);
+    top: 0;
     left: 0;
-    transform: translate(0, -50%);
-    padding: 20px;
-    background: #10101091; }
-    @media screen and (max-width: 991px) {
-      .image-content .content {
-        position: static;
-        transform: translate(0, 0);
-        top: 0;
-        left: 0;
-        width: 100%;
-        background: transparent;
-        order: 2; } }
-    @media screen and (max-width: 576px) {
-      .image-content .content {
-        padding: 10px; } }
-    .image-content .content .head {
-      font-family: "Mate SC", serif;
-      font-size: 2rem;
-      color: #ff0000; }
-      @media screen and (max-width: 768px) {
-        .image-content .content .head {
-          font-size: 1.6rem; } }
-      @media screen and (max-width: 576px) {
-        .image-content .content .head {
-          font-size: 1.3rem; } }
-    .image-content .content .text {
-      font-family: "Caveat", cursive;
-      font-size: 1.3rem;
-      color: #ffffff;
-      letter-spacing: 1px; }
-      @media screen and (max-width: 768px) {
-        .image-content .content .text {
-          font-size: 1.1rem; } }
-      @media screen and (max-width: 576px) {
-        .image-content .content .text {
-          font-size: 1rem; } }
+    width: 100%;
+    background: transparent;
+    order: 2;
+  }
+}
+@media screen and (max-width: 576px) {
+  .image-content .content {
+    padding: 10px;
+  }
+}
+.image-content .content .head {
+  font-family: "Mate SC", serif;
+  font-size: 2rem;
+  color: #ff0000;
+}
+@media screen and (max-width: 768px) {
+  .image-content .content .head {
+    font-size: 1.6rem;
+  }
+}
+@media screen and (max-width: 576px) {
+  .image-content .content .head {
+    font-size: 1.3rem;
+  }
+}
+.image-content .content .text {
+  font-family: "Caveat", cursive;
+  font-size: 1.3rem;
+  color: #ffffff;
+  letter-spacing: 1px;
+}
+@media screen and (max-width: 768px) {
+  .image-content .content .text {
+    font-size: 1.1rem;
+  }
+}
+@media screen and (max-width: 576px) {
+  .image-content .content .text {
+    font-size: 1rem;
+  }
+}
+.image-content .image {
+  width: 60%;
+  margin-left: auto;
+  aspect-ratio: 1/0.7;
+}
+@media screen and (max-width: 991px) {
   .image-content .image {
-    width: 60%;
-    margin-left: auto;
-    aspect-ratio: 1/0.7; }
-    @media screen and (max-width: 991px) {
-      .image-content .image {
-        width: 100%;
-        margin: 0;
-        order: 1; } }
-  .image-content:nth-child(2n + 1) .content {
-    left: initial;
-    right: 0; }
-  .image-content:nth-child(2n + 1) .image {
-    margin-right: auto;
-    margin-left: 0; }
-    @media screen and (max-width: 991px) {
-      .image-content:nth-child(2n + 1) .image {
-        margin: 0; } }
-  .image-content:nth-last-child(1) {
-    margin-bottom: 0; }
-
-/*# sourceMappingURL=ExpertiseCard.css.map */
+    width: 100%;
+    margin: 0;
+    order: 1;
+  }
+}
+.image-content:nth-child(2n+1) .content {
+  left: initial;
+  right: 0;
+}
+.image-content:nth-child(2n+1) .image {
+  margin-right: auto;
+  margin-left: 0;
+}
+@media screen and (max-width: 991px) {
+  .image-content:nth-child(2n+1) .image {
+    margin: 0;
+  }
+}
+.image-content:nth-last-child(1) {
+  margin-bottom: 0;
+}/*# sourceMappingURL=ExpertiseCard.css.map */

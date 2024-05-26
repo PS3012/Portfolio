@@ -1,164 +1,226 @@
 @import url("https://fonts.googleapis.com/css2?family=Arsenal&family=Caveat&family=Mate+SC&family=Metal+Mania&family=Nosifer&display=swap");
 #contact-page {
   background: #101010;
-  padding-top: 120px; }
-  @media screen and (max-width: 768px) {
-    #contact-page {
-      padding-top: 100px; } }
-  #contact-page #my-details {
-    border-bottom: 1px solid #ffffff45; }
-    #contact-page #my-details .inner-container {
-      border-center: 0px solid #ffffff45;
-      padding: 50px 0; }
-      @media screen and (max-width: 768px) {
-        #contact-page #my-details .inner-container {
-          padding: 40px 0;
-          border: 0; } }
-      #contact-page #my-details .inner-container .section-head {
-        margin-bottom: 50px; }
-        @media screen and (max-width: 991px) {
-          #contact-page #my-details .inner-container .section-head {
-            margin-bottom: 40px; } }
-        @media screen and (max-width: 768px) {
-          #contact-page #my-details .inner-container .section-head {
-            margin-bottom: 30px; } }
-        #contact-page #my-details .inner-container .section-head .main-head {
-          font-size: 3rem;
-          color: #ffffff;
-          text-align: center;
-          font-family: "Nosifer", sans-serif;
-          letter-spacing: 2px; }
-          #contact-page #my-details .inner-container .section-head .main-head span {
-            color: #ff0000; }
-          @media screen and (max-width: 991px) {
-            #contact-page #my-details .inner-container .section-head .main-head {
-              font-size: 2rem; } }
-          @media screen and (max-width: 768px) {
-            #contact-page #my-details .inner-container .section-head .main-head {
-              font-size: 1.6rem;
-              text-align: center; } }
-          @media screen and (max-width: 576px) {
-            #contact-page #my-details .inner-container .section-head .main-head {
-              font-size: 1.3rem; } }
-    #contact-page #my-details .inner-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 30px; }
-      #contact-page #my-details .inner-grid .detail-card {
-        box-shadow: 5px 5px 10px #0c0c0c, -5px -5px 10px #141414;
-        padding: 20px;
-        border-radius: 5px;
-        display: grid;
-        gap: 10px;
-        color: #ffffff;
-        justify-content: center;
-        justify-items: center; }
-        #contact-page #my-details .inner-grid .detail-card .icon {
-          width: 70px;
-          height: 70px;
-          border: 2px dotted #ffffff;
-          border-radius: 50%;
-          display: grid;
-          place-items: center;
-          font-size: 2rem; }
-        #contact-page #my-details .inner-grid .detail-card .text {
-          font-family: "Mate SC", serif;
-          font-size: 1.2rem; }
-          @media screen and (max-width: 768px) {
-            #contact-page #my-details .inner-grid .detail-card .text {
-              font-size: 1.1rem; } }
-          @media screen and (max-width: 576px) {
-            #contact-page #my-details .inner-grid .detail-card .text {
-              font-size: 1rem; } }
-  #contact-page #form-area {
-    border-bottom: 1px solid #ffffff45; }
-    #contact-page #form-area .inner-container {
-      border-center: 0px solid #ffffff45;
-      padding: 50px 0; }
-      @media screen and (max-width: 768px) {
-        #contact-page #form-area .inner-container {
-          padding: 40px 0;
-          border: 0; } }
-      #contact-page #form-area .inner-container .section-head {
-        margin-bottom: 50px; }
-        @media screen and (max-width: 991px) {
-          #contact-page #form-area .inner-container .section-head {
-            margin-bottom: 40px; } }
-        @media screen and (max-width: 768px) {
-          #contact-page #form-area .inner-container .section-head {
-            margin-bottom: 30px; } }
-        #contact-page #form-area .inner-container .section-head .main-head {
-          font-size: 3rem;
-          color: #ffffff;
-          text-align: center;
-          font-family: "Nosifer", sans-serif;
-          letter-spacing: 2px; }
-          #contact-page #form-area .inner-container .section-head .main-head span {
-            color: #ff0000; }
-          @media screen and (max-width: 991px) {
-            #contact-page #form-area .inner-container .section-head .main-head {
-              font-size: 2rem; } }
-          @media screen and (max-width: 768px) {
-            #contact-page #form-area .inner-container .section-head .main-head {
-              font-size: 1.6rem;
-              text-align: center; } }
-          @media screen and (max-width: 576px) {
-            #contact-page #form-area .inner-container .section-head .main-head {
-              font-size: 1.3rem; } }
-    #contact-page #form-area .inner-grid {
-      display: grid;
-      grid-template-columns: 1fr 1.5fr;
-      gap: 30px; }
-      @media screen and (max-width: 991px) {
-        #contact-page #form-area .inner-grid {
-          grid-template-columns: 1fr; } }
-      #contact-page #form-area .inner-grid .form-block {
-        box-shadow: 5px 5px 10px #0c0c0c, -5px -5px 10px #141414;
-        padding: 20px;
-        border-radius: 5px; }
-        #contact-page #form-area .inner-grid .form-block .head {
-          color: #ffffff;
-          text-align: center;
-          font-family: "Mate SC", serif;
-          font-size: 2rem;
-          margin-bottom: 20px;
-          text-transform: uppercase;
-          font-weight: bold; }
-          @media screen and (max-width: 768px) {
-            #contact-page #form-area .inner-grid .form-block .head {
-              font-size: 1.6rem; } }
-          @media screen and (max-width: 576px) {
-            #contact-page #form-area .inner-grid .form-block .head {
-              font-size: 1.3rem; } }
-        #contact-page #form-area .inner-grid .form-block .group-input {
-          box-shadow: inset 5px 5px 10px #0c0c0c, inset -5px -5px 10px #141414;
-          border-radius: 5px;
-          display: grid;
-          grid-template-columns: 70px 1fr;
-          gap: 10px;
-          padding: 15px 10px;
-          margin-bottom: 20px; }
-          #contact-page #form-area .inner-grid .form-block .group-input label {
-            color: #ffffff;
-            font-family: "Mate SC", serif; }
-            @media screen and (max-width: 576px) {
-              #contact-page #form-area .inner-grid .form-block .group-input label {
-                font-size: 0.9rem; } }
-          #contact-page #form-area .inner-grid .form-block .group-input input, #contact-page #form-area .inner-grid .form-block .group-input textarea {
-            display: block;
-            width: 100%;
-            color: #ffffff;
-            background: transparent; }
-        #contact-page #form-area .inner-grid .form-block .btn-block {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          gap: 30px; }
-          @media screen and (max-width: 576px) {
-            #contact-page #form-area .inner-grid .form-block .btn-block {
-              gap: 20px; } }
-          @media screen and (max-width: 400px) {
-            #contact-page #form-area .inner-grid .form-block .btn-block {
-              gap: 10px; } }
-
-/*# sourceMappingURL=Contact.css.map */
+  padding-top: 120px;
+}
+@media screen and (max-width: 768px) {
+  #contact-page {
+    padding-top: 100px;
+  }
+}
+#contact-page #my-details {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2705882353);
+}
+#contact-page #my-details .inner-container {
+  border-center: 0px solid rgba(255, 255, 255, 0.2705882353);
+  padding: 50px 0;
+}
+@media screen and (max-width: 768px) {
+  #contact-page #my-details .inner-container {
+    padding: 40px 0;
+    border: 0;
+  }
+}
+#contact-page #my-details .inner-container .section-head {
+  margin-bottom: 50px;
+}
+@media screen and (max-width: 991px) {
+  #contact-page #my-details .inner-container .section-head {
+    margin-bottom: 40px;
+  }
+}
+@media screen and (max-width: 768px) {
+  #contact-page #my-details .inner-container .section-head {
+    margin-bottom: 30px;
+  }
+}
+#contact-page #my-details .inner-container .section-head .main-head {
+  font-size: 3rem;
+  color: #ffffff;
+  text-align: center;
+  font-family: "Nosifer", sans-serif;
+  letter-spacing: 2px;
+}
+#contact-page #my-details .inner-container .section-head .main-head span {
+  color: #ff0000;
+}
+@media screen and (max-width: 991px) {
+  #contact-page #my-details .inner-container .section-head .main-head {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  #contact-page #my-details .inner-container .section-head .main-head {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 576px) {
+  #contact-page #my-details .inner-container .section-head .main-head {
+    font-size: 1.3rem;
+  }
+}
+#contact-page #my-details .inner-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+#contact-page #my-details .inner-grid .detail-card {
+  box-shadow: 5px 5px 10px #0c0c0c, -5px -5px 10px #141414;
+  padding: 20px;
+  border-radius: 5px;
+  display: grid;
+  gap: 10px;
+  color: #ffffff;
+  justify-content: center;
+  justify-items: center;
+}
+#contact-page #my-details .inner-grid .detail-card .icon {
+  width: 70px;
+  height: 70px;
+  border: 2px dotted #ffffff;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 2rem;
+}
+#contact-page #my-details .inner-grid .detail-card .text {
+  font-family: "Mate SC", serif;
+  font-size: 1.2rem;
+}
+@media screen and (max-width: 768px) {
+  #contact-page #my-details .inner-grid .detail-card .text {
+    font-size: 1.1rem;
+  }
+}
+@media screen and (max-width: 576px) {
+  #contact-page #my-details .inner-grid .detail-card .text {
+    font-size: 1rem;
+  }
+}
+#contact-page #form-area {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2705882353);
+}
+#contact-page #form-area .inner-container {
+  border-center: 0px solid rgba(255, 255, 255, 0.2705882353);
+  padding: 50px 0;
+}
+@media screen and (max-width: 768px) {
+  #contact-page #form-area .inner-container {
+    padding: 40px 0;
+    border: 0;
+  }
+}
+#contact-page #form-area .inner-container .section-head {
+  margin-bottom: 50px;
+}
+@media screen and (max-width: 991px) {
+  #contact-page #form-area .inner-container .section-head {
+    margin-bottom: 40px;
+  }
+}
+@media screen and (max-width: 768px) {
+  #contact-page #form-area .inner-container .section-head {
+    margin-bottom: 30px;
+  }
+}
+#contact-page #form-area .inner-container .section-head .main-head {
+  font-size: 3rem;
+  color: #ffffff;
+  text-align: center;
+  font-family: "Nosifer", sans-serif;
+  letter-spacing: 2px;
+}
+#contact-page #form-area .inner-container .section-head .main-head span {
+  color: #ff0000;
+}
+@media screen and (max-width: 991px) {
+  #contact-page #form-area .inner-container .section-head .main-head {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  #contact-page #form-area .inner-container .section-head .main-head {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 576px) {
+  #contact-page #form-area .inner-container .section-head .main-head {
+    font-size: 1.3rem;
+  }
+}
+#contact-page #form-area .inner-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 30px;
+}
+@media screen and (max-width: 991px) {
+  #contact-page #form-area .inner-grid {
+    grid-template-columns: 1fr;
+  }
+}
+#contact-page #form-area .inner-grid .form-block {
+  box-shadow: 5px 5px 10px #0c0c0c, -5px -5px 10px #141414;
+  padding: 20px;
+  border-radius: 5px;
+}
+#contact-page #form-area .inner-grid .form-block .head {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Mate SC", serif;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+@media screen and (max-width: 768px) {
+  #contact-page #form-area .inner-grid .form-block .head {
+    font-size: 1.6rem;
+  }
+}
+@media screen and (max-width: 576px) {
+  #contact-page #form-area .inner-grid .form-block .head {
+    font-size: 1.3rem;
+  }
+}
+#contact-page #form-area .inner-grid .form-block .group-input {
+  box-shadow: inset 5px 5px 10px #0c0c0c, inset -5px -5px 10px #141414;
+  border-radius: 5px;
+  display: grid;
+  grid-template-columns: 70px 1fr;
+  gap: 10px;
+  padding: 15px 10px;
+  margin-bottom: 20px;
+}
+#contact-page #form-area .inner-grid .form-block .group-input label {
+  color: #ffffff;
+  font-family: "Mate SC", serif;
+}
+@media screen and (max-width: 576px) {
+  #contact-page #form-area .inner-grid .form-block .group-input label {
+    font-size: 0.9rem;
+  }
+}
+#contact-page #form-area .inner-grid .form-block .group-input input, #contact-page #form-area .inner-grid .form-block .group-input textarea {
+  display: block;
+  width: 100%;
+  color: #ffffff;
+  background: transparent;
+}
+#contact-page #form-area .inner-grid .form-block .btn-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+@media screen and (max-width: 576px) {
+  #contact-page #form-area .inner-grid .form-block .btn-block {
+    gap: 20px;
+  }
+}
+@media screen and (max-width: 400px) {
+  #contact-page #form-area .inner-grid .form-block .btn-block {
+    gap: 10px;
+  }
+}/*# sourceMappingURL=Contact.css.map */

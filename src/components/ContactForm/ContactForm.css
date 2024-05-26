@@ -1,106 +1,144 @@
 @import url("https://fonts.googleapis.com/css2?family=Arsenal&family=Caveat&family=Mate+SC&family=Metal+Mania&family=Nosifer&display=swap");
 #contact-me {
-  border-bottom: 1px solid #ffffff45; }
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2705882353);
+}
+#contact-me .inner-container {
+  border-left: 1px solid rgba(255, 255, 255, 0.2705882353);
+  padding: 50px 0 50px 30px;
+}
+@media screen and (max-width: 768px) {
   #contact-me .inner-container {
-    border-left: 1px solid #ffffff45;
-    padding: 50px 0 50px 30px; }
-    @media screen and (max-width: 768px) {
-      #contact-me .inner-container {
-        padding: 40px 0;
-        border: 0; } }
-    #contact-me .inner-container .section-head {
-      margin-bottom: 50px; }
-      @media screen and (max-width: 991px) {
-        #contact-me .inner-container .section-head {
-          margin-bottom: 40px; } }
-      @media screen and (max-width: 768px) {
-        #contact-me .inner-container .section-head {
-          margin-bottom: 30px; } }
-      #contact-me .inner-container .section-head .main-head {
-        font-size: 3rem;
-        color: #ffffff;
-        text-align: left;
-        font-family: "Nosifer", sans-serif;
-        letter-spacing: 2px; }
-        #contact-me .inner-container .section-head .main-head span {
-          color: #ff0000; }
-        @media screen and (max-width: 991px) {
-          #contact-me .inner-container .section-head .main-head {
-            font-size: 2rem; } }
-        @media screen and (max-width: 768px) {
-          #contact-me .inner-container .section-head .main-head {
-            font-size: 1.6rem;
-            text-align: center; } }
-        @media screen and (max-width: 576px) {
-          #contact-me .inner-container .section-head .main-head {
-            font-size: 1.3rem; } }
+    padding: 40px 0;
+    border: 0;
+  }
+}
+#contact-me .inner-container .section-head {
+  margin-bottom: 50px;
+}
+@media screen and (max-width: 991px) {
+  #contact-me .inner-container .section-head {
+    margin-bottom: 40px;
+  }
+}
+@media screen and (max-width: 768px) {
+  #contact-me .inner-container .section-head {
+    margin-bottom: 30px;
+  }
+}
+#contact-me .inner-container .section-head .main-head {
+  font-size: 3rem;
+  color: #ffffff;
+  text-align: left;
+  font-family: "Nosifer", sans-serif;
+  letter-spacing: 2px;
+}
+#contact-me .inner-container .section-head .main-head span {
+  color: #ff0000;
+}
+@media screen and (max-width: 991px) {
+  #contact-me .inner-container .section-head .main-head {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  #contact-me .inner-container .section-head .main-head {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 576px) {
+  #contact-me .inner-container .section-head .main-head {
+    font-size: 1.3rem;
+  }
+}
+#contact-me .inner-grid {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  align-items: center;
+  gap: 30px;
+}
+@media screen and (max-width: 991px) {
   #contact-me .inner-grid {
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-    align-items: center;
-    gap: 30px; }
-    @media screen and (max-width: 991px) {
-      #contact-me .inner-grid {
-        grid-template-columns: 1fr; } }
-    #contact-me .inner-grid .form-block .group-input {
-      margin-bottom: 20px;
-      display: grid;
-      grid-template-columns: 150px 1fr;
-      align-items: baseline;
-      border: 1px solid #ffffff45;
-      border-radius: 5px; }
-      @media screen and (max-width: 576px) {
-        #contact-me .inner-grid .form-block .group-input {
-          grid-template-columns: 100px 1fr; } }
-      #contact-me .inner-grid .form-block .group-input label {
-        color: #ffffff;
-        font-family: "Caveat", cursive;
-        display: grid;
-        place-items: center; }
-        @media screen and (max-width: 576px) {
-          #contact-me .inner-grid .form-block .group-input label {
-            font-size: 0.9rem; } }
-      #contact-me .inner-grid .form-block .group-input input,
-      #contact-me .inner-grid .form-block .group-input textarea {
-        width: 100%;
-        display: block;
-        padding: 5px 15px;
-        background: #ffffff3d; }
-    #contact-me .inner-grid .form-block .btn-block {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 30px; }
-      @media screen and (max-width: 576px) {
-        #contact-me .inner-grid .form-block .btn-block {
-          gap: 20px; } }
-      @media screen and (max-width: 400px) {
-        #contact-me .inner-grid .form-block .btn-block {
-          gap: 10px; } }
-    @media screen and (max-width: 991px) {
-      #contact-me .inner-grid .form-block {
-        order: 2; } }
-    #contact-me .inner-grid .detail-block .icon {
-      background: #ff0000;
-      color: #ffffff;
-      border-radius: 50%;
-      aspect-ratio: 1/1;
-      width: 80px;
-      display: grid;
-      place-items: center;
-      font-size: 2.5rem;
-      transform: rotate(45deg);
-      margin-bottom: 20px; }
-    #contact-me .inner-grid .detail-block .block {
-      margin-bottom: 10px; }
-      #contact-me .inner-grid .detail-block .block:nth-last-child(1) {
-        margin-bottom: 0; }
-      #contact-me .inner-grid .detail-block .block div {
-        color: #ffffff;
-        font-family: "Mate SC", serif;
-        font-size: 1.2rem; }
-    @media screen and (max-width: 991px) {
-      #contact-me .inner-grid .detail-block {
-        order: 1; } }
-
-/*# sourceMappingURL=ContactForm.css.map */
+    grid-template-columns: 1fr;
+  }
+}
+#contact-me .inner-grid .form-block .group-input {
+  margin-bottom: 20px;
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  align-items: baseline;
+  border: 1px solid rgba(255, 255, 255, 0.2705882353);
+  border-radius: 5px;
+}
+@media screen and (max-width: 576px) {
+  #contact-me .inner-grid .form-block .group-input {
+    grid-template-columns: 100px 1fr;
+  }
+}
+#contact-me .inner-grid .form-block .group-input label {
+  color: #ffffff;
+  font-family: "Caveat", cursive;
+  display: grid;
+  place-items: center;
+}
+@media screen and (max-width: 576px) {
+  #contact-me .inner-grid .form-block .group-input label {
+    font-size: 0.9rem;
+  }
+}
+#contact-me .inner-grid .form-block .group-input input,
+#contact-me .inner-grid .form-block .group-input textarea {
+  width: 100%;
+  display: block;
+  padding: 5px 15px;
+  background: #ffffff3d;
+}
+#contact-me .inner-grid .form-block .btn-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+@media screen and (max-width: 576px) {
+  #contact-me .inner-grid .form-block .btn-block {
+    gap: 20px;
+  }
+}
+@media screen and (max-width: 400px) {
+  #contact-me .inner-grid .form-block .btn-block {
+    gap: 10px;
+  }
+}
+@media screen and (max-width: 991px) {
+  #contact-me .inner-grid .form-block {
+    order: 2;
+  }
+}
+#contact-me .inner-grid .detail-block .icon {
+  background: #ff0000;
+  color: #ffffff;
+  border-radius: 50%;
+  aspect-ratio: 1/1;
+  width: 80px;
+  display: grid;
+  place-items: center;
+  font-size: 2.5rem;
+  transform: rotate(45deg);
+  margin-bottom: 20px;
+}
+#contact-me .inner-grid .detail-block .block {
+  margin-bottom: 10px;
+}
+#contact-me .inner-grid .detail-block .block:nth-last-child(1) {
+  margin-bottom: 0;
+}
+#contact-me .inner-grid .detail-block .block div {
+  color: #ffffff;
+  font-family: "Mate SC", serif;
+  font-size: 1.2rem;
+}
+@media screen and (max-width: 991px) {
+  #contact-me .inner-grid .detail-block {
+    order: 1;
+  }
+}/*# sourceMappingURL=ContactForm.css.map */

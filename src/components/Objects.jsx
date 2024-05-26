@@ -193,6 +193,12 @@ export const experience = [
         time: "November, 2023 - January, 2024",
         text: "Specialized in React.js and TypeScript to develop engaging web applications. Created visually appealing, responsive designs using Bootstrap and SASS/SCSS. Managed version control through Git/GitHub, translating design concepts into user-friendly interfaces.",
     },
+    {
+        id: 4,
+        title: "Catabatic Technology Pvt. Ltd. | Noida",
+        time: "March, 2023 - Present",
+        text: "Specialized in React.js and TypeScript to develop engaging web applications. Created visually appealing, responsive designs using Bootstrap and SASS/SCSS. Managed version control through Git/GitHub, translating design concepts into user-friendly interfaces.",
+    },
 ]
 
 export const myDetails = [
@@ -209,7 +215,7 @@ export const myDetails = [
     {
         id: 3,
         icon: <FontAwesomeIcon icon={faSignsPost} />,
-        text: "Jhansi, Uttar Pradesh",
+        text: "Greater Noida",
     },
 ]
 
