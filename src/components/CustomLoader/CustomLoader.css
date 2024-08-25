@@ -6,31 +6,45 @@
   top: 0;
   left: 0;
   z-index: 100;
-}
-#custom-loader .loader-bg {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  height: 100vh;
-}
-#custom-loader .loader-bg div {
-  width: 100%;
-  height: 100vh;
   background: #101010;
-  border-right: 1px solid #ffffff2e;
-  animation: 2s ease-in forwards bgStrip;
+  display: grid;
+  place-items: center;
+  opacity: 1;
+  transition: all 0.3s linear;
 }
-
-@keyframes bgStrip {
-  0% {
-    width: 100%;
-    height: 100vh;
+#custom-loader.remove {
+  opacity: 0;
+  transform: translate(0, -100%);
+}
+#custom-loader .loader-item {
+  border: 10px solid #ffffff;
+  width: -moz-max-content;
+  width: max-content;
+  color: #ffffff;
+  font-size: 4rem;
+  font-family: "Merriweather Sans", sans-serif;
+  font-weight: 700;
+}
+@media screen and (max-width: 768px) {
+  #custom-loader .loader-item {
+    font-size: 3rem;
   }
-  70% {
-    width: 1px;
-    height: 100vh;
+}
+@media screen and (max-width: 576px) {
+  #custom-loader .loader-item {
+    font-size: 2rem;
+    border-width: 7px;
   }
-  100% {
-    width: 1px;
-    height: 0;
+}
+#custom-loader .loader-item div {
+  padding: 0 40px;
+}
+@media screen and (max-width: 576px) {
+  #custom-loader .loader-item div {
+    padding: 0 30px;
   }
+}
+#custom-loader .loader-item div:nth-child(2) {
+  background: #ffffff;
+  color: #101010;
 }/*# sourceMappingURL=CustomLoader.css.map */

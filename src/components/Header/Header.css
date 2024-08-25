@@ -14,7 +14,7 @@ a, a:hover {
   transition: all 0.3s linear;
 }
 a:hover {
-  color: #ff0000;
+  color: #2274a5;
 }
 
 input, input:focus,
@@ -43,12 +43,12 @@ button {
 }
 
 ::-moz-selection {
-  background: #ff0000;
+  background: #2274a5;
   color: #ffffff;
 }
 
 ::selection {
-  background: #ff0000;
+  background: #2274a5;
   color: #ffffff;
 }
 
@@ -156,7 +156,7 @@ header .inner-grid .logo .head {
 }
 header .inner-grid .logo .slogan {
   font-size: 0.9rem;
-  color: #ff0000;
+  color: #2274a5;
   text-transform: uppercase;
   text-align: center;
   letter-spacing: 2px;
@@ -231,7 +231,7 @@ header .inner-grid .link-block a.active::after {
 }
 @media screen and (max-width: 768px) {
   header .inner-grid .link-block a.active {
-    color: #ff0000;
+    color: #2274a5;
   }
 }
 header .inner-grid .mobile-menu-btn {

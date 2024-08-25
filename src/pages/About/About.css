@@ -42,7 +42,7 @@
   letter-spacing: 2px;
 }
 #about-page #about-me .inner-container .section-head .main-head span {
-  color: #ff0000;
+  color: #2274a5;
 }
 @media screen and (max-width: 991px) {
   #about-page #about-me .inner-container .section-head .main-head {
@@ -71,7 +71,7 @@
   }
 }
 #about-page #about-me .inner-grid .content-block .head {
-  color: #ff0000;
+  color: #2274a5;
   font-size: 3rem;
   font-family: "Mate SC", serif;
   margin-bottom: 20px;
@@ -149,7 +149,7 @@
   letter-spacing: 2px;
 }
 #about-page #more-about-me .inner-container .section-head .main-head span {
-  color: #ff0000;
+  color: #2274a5;
 }
 @media screen and (max-width: 991px) {
   #about-page #more-about-me .inner-container .section-head .main-head {
@@ -218,7 +218,7 @@
   letter-spacing: 2px;
 }
 #about-page #my-resume .inner-container .section-head .main-head span {
-  color: #ff0000;
+  color: #2274a5;
 }
 @media screen and (max-width: 991px) {
   #about-page #my-resume .inner-container .section-head .main-head {
@@ -272,11 +272,11 @@
   }
 }
 #about-page #my-resume .resume-tabs .tab-btn button:hover {
-  color: #ff0000;
+  color: #2274a5;
 }
 #about-page #my-resume .resume-tabs .tab-btn button.active {
   background: #101010;
-  border-color: #ff0000;
+  border-color: #2274a5;
 }
 #about-page #my-resume .resume-tabs .tab-content .skill-grid {
   display: grid;

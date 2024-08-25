@@ -33,7 +33,7 @@
   letter-spacing: 2px;
 }
 #contact-me .inner-container .section-head .main-head span {
-  color: #ff0000;
+  color: #2274a5;
 }
 @media screen and (max-width: 991px) {
   #contact-me .inner-container .section-head .main-head {
@@ -115,7 +115,7 @@
   }
 }
 #contact-me .inner-grid .detail-block .icon {
-  background: #ff0000;
+  background: #2274a5;
   color: #ffffff;
   border-radius: 50%;
   aspect-ratio: 1/1;

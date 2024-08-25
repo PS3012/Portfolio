@@ -34,7 +34,7 @@ footer .inner-container .section-head .main-head {
   letter-spacing: 2px;
 }
 footer .inner-container .section-head .main-head span {
-  color: #ff0000;
+  color: #2274a5;
 }
 @media screen and (max-width: 991px) {
   footer .inner-container .section-head .main-head {
@@ -72,7 +72,7 @@ footer .links {
 }
 footer .links a {
   padding: 2px 15px;
-  color: #ff0000;
+  color: #2274a5;
   border-right: 1px solid #ffffff;
   font-family: "Mate SC", serif;
   text-transform: uppercase;

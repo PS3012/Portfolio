@@ -2,30 +2,27 @@ import { useEffect, useState } from "react";
 import "./CustomLoader.css"
 
 function CustomLoader() {
-    const [displayLoader, setDisplayLoader] = useState(true);
+    const [removeLoader, setRemoveLoader] = useState(false);
 
     useEffect(() => {
         const timer = setTimeout(() => {
-            setDisplayLoader(false);
-        }, 3500);
+            setRemoveLoader(true);
+        }, 1000);
 
-        return () => clearTimeout(timer); // Cleanup timer on component unmount
+        return () => {
+            clearTimeout(timer);
+        };
     }, []);
     return (
         <>
 
-            {displayLoader &&
-                <div id="custom-loader">
-                    <div className="loader-bg">
-                        <div>&nbsp;</div>
-                        <div>&nbsp;</div>
-                        <div>&nbsp;</div>
-                        <div>&nbsp;</div>
-                        <div>&nbsp;</div>
-                        <div>&nbsp;</div>
-                    </div>
+            <div id="custom-loader" className={removeLoader ? "remove" : ""}>
+                <div className="loader-item">
+                    <div>PARENTAL</div>
+                    <div>ADVISORY</div>
+                    <div>CONTENT</div>
                 </div>
-            }
+            </div>
 
         </>
     )

@@ -42,7 +42,7 @@
   letter-spacing: 2px;
 }
 #expertise-page #expertise-area .inner-container .section-head .main-head span {
-  color: #ff0000;
+  color: #2274a5;
 }
 @media screen and (max-width: 991px) {
   #expertise-page #expertise-area .inner-container .section-head .main-head {
@@ -96,7 +96,7 @@
   font-family: "Caveat", cursive;
   font-size: 1.2rem;
   margin-top: 60px;
-  border-left: 4px solid #ff0000;
+  border-left: 4px solid #2274a5;
   padding-left: 20px;
 }
 @media screen and (max-width: 991px) {
